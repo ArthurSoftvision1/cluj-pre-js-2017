@@ -1,9 +1,62 @@
 //Evaluation less file
 
+//Import colors file
+@import 'colors';
+
 .navigation_bar {
-  border-bottom: 2px solid darkgrey;
+  border-bottom: 2px solid @darkgrey;
   padding-top: 12px;
   padding-bottom: 14px;
+}
+
+.left_image {
+  height: 290px;
+}
+
+.right_image {
+  float: right;
+}
+
+.right_description {
+  font-weight: bold;
+  margin-top:50px;
+}
+
+.container-fluid {
+  background-color: lightgrey;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+th, td {
+  padding-left: 55px;
+  font-size: 20px;
+}
+
+td {
+  border-bottom: 1px solid black;
+}
+
+/*Footer section*/
+.footer_section {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  margin-top: 80px;
+}
+
+table tr th {
+  background-color: #03A9F4;
+  color: white;
+  padding: 10px 0 10px 0;
 }
 
 .logo_image {
@@ -14,7 +67,7 @@
   padding: 25px 0 12px 0;
   font-weight:bold;
   font-size:16px;
-  color: gray;
+  color: @grey;
 }
 
 .container_table {
@@ -34,11 +87,165 @@
 }
 
 a.border_bottom:hover {
-  border-bottom: 4px solid blue;
+  border-bottom: 4px solid @blue;
   border-bottom-width: 7px;
 }
 
 table {
   width: 100%;
+}
+
+/*Evaluation html*/
+
+.add_button {
+  background-color: @lightBlue;
+  margin:8px 0;
+  color: white;
+  height: 100%;
+  font-size: 20px;
+  border-radius: 100%;
+  border: 1px solid @lightBlue;
+}
+
+/* Large screens ----------- */
+@media screen and (max-width: 1824px) and (min-width: 1200px) {
+  /* Styles */
+  .add_button {
+    background-color: @lightBlue;
+    margin: 8px 0;
+    color: white;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid @lightBlue;
+  }
+
+  .logout_button {
+    float: none!important;
+  }
+
+  .border_bottom {
+    font-size: 17px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  /* Styles */
+  .add_button {
+    background-color: @lightBlue;
+    margin: 8px 0;
+    color: white;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid @lightBlue;
+  }
+
+  .logout_button {
+    float: none!important;
+  }
+
+  .border_bottom {
+    font-size: 16px;
+  }
+
+}
+
+/* Desktops and laptops ----------- */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  /* Styles */
+  .add_button {
+    background-color: @lightBlue;
+    margin: 8px 0;
+    color: white;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid @lightBlue;
+  }
+
+  .logout_button {
+    float: none!important;
+  }
+
+  .border_bottom {
+    font-size: 14px;
+  }
+}
+
+/*Screen between 699px and 768px*/
+@media screen and (max-width: 768px) and (min-width: 699px) {
+  .logout_button {
+    float: none!important;
+  }
+
+  .add_button {
+    background-color: @lightBlue;
+    margin: 8px 0;
+    color: white;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid @lightBlue;
+  }
+
+  .border_bottom {
+    font-size: 14px;
+  }
+
+  .navigation_bar .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+
+/*Screen between 529px and 699px*/
+@media screen and (max-width: 699px) and (min-width: 520px) {
+  .logout_button {
+    float: none!important;
+  }
+
+  .add_button {
+    background-color: @lightBlue;
+    margin: 8px 0;
+    color: white;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid @lightBlue;
+  }
+
+  .border_bottom {
+    font-size: 14px;
+  }
+
+  .navigation_bar .col-md-4 {
+    margin-bottom: 30px;
+  }
+
+}
+
+/*Screen between 320px and 520px*/
+@media screen and (max-width: 520px) and (min-width: 320px) {
+  .logout_button {
+    float: none!important;
+  }
+
+  .border_bottom {
+    font-size: 14px;
+  }
+
+  .navigation_bar .col-md-4 {
+    margin-bottom: 30px;
+  }
+
+  td {
+    padding-left: 17px!important;
+    font-size: 10px;
+  }
+
+  th {
+    font-size: 10px;
+  }
 }
 

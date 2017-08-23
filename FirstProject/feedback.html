@@ -3,13 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>First App</title>
+        <title>Feedback Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!--Here is established the connection between HTML file and CSS file-->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/feedback.css">
 
         <!--Here is the path to our images directory-->
         <link rel="stylesheet" href="img/">
@@ -17,24 +13,29 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+        <link rel="stylesheet/less" href="assets/feedback.less" type="text/css"/>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+
     </head>
 
     <body>
     <div class="row">
         <div class="col-md-12">
-            <header class="header_background_section">
+            <header class="header-background-section">
                 <div class="col-md-12 ">
 
                     <!--Feedback Interview Form Section-->
-                   <form class="feedback_interview_section">
-                       <div class="header_form_section">
-                            <h1 class="interview_text_area">Interview Feedback</h1>
+                   <form class="feedback-interview-section">
+                       <div class="header-form-section">
+                            <h1 class="interview-text-area">Interview Feedback</h1>
 
-                           <input class="username_area_input" type="text" name="lastname" placeholder="Username"/> <br>
-                           <input class="password_area_input" type="password" name="lastname" placeholder="Password"/> <br>
-                           <input class="login_button" type="submit" value="Login">
+                           <input class="username-area-input" type="text" name="lastname" placeholder="Username"/> <br>
+                           <input class="password-area-input" type="password" name="lastname" placeholder="Password"/> <br>
+                           <input class="login-button" type="submit" value="Login">
                        </div>
                    </form>
+
                 </div>
             </header>
         </div>
@@ -44,12 +45,12 @@
         <div class="container">
             <div class="col-md-12">
                 <div class="col-md-6">
-                    <a href="evaluation.html"><img class="left_image" src="img/new%20feedback.jpg"/> </a>
+                    <a href="evaluation.html"><img class="feedback-image" src="img/new%20feedback.jpg"/> </a>
                 </div>
                 <!--Right text area-->
                 <div class="col-md-6">
-                    <h3 class="right_description">Submit new feedback</h3>
-                    <p class="text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+                    <h3 class="right-title">Submit new feedback</h3>
+                    <p class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
                         nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus,
                         tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque
                         nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in
@@ -61,11 +62,11 @@
                 </div>
             </div>
 
-            <div class="col-md-12 text_description_2">
+            <div class="col-md-12 text-description-2">
                 <!--Left text area-->
                 <div class="col-md-6">
-                    <h3 class="right_description">View feedback results</h3>
-                    <p class="text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+                    <h3>View feedback results</h3>
+                    <p class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
                         nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus,
                         tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque
                         nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in
@@ -76,16 +77,16 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <a class="results_image" href="evaluation.html"><img class="left_image right_image" src="img/results.jpg"/> </a>
+                    <a class="" href="evaluation.html"><img class="left-image right-image" src="img/results.jpg"/> </a>
                 </div>
             </div>
         </div>
     </div>
         <!--Footer area-->
-        <footer class="footer_margin">
-                <div class="col-md-12">
-                    <p class="footer_section">Copyright@Softvision 2017</p>
-                </div>
+        <footer class="footer-margin">
+            <div class="col-md-12 footer-padding">
+                <p class="footer-section">Copyright@Softvision 2017</p>
+            </div>
         </footer>
 
     </body>
