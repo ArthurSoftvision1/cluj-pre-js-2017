@@ -104,4 +104,3 @@ window.onload = function(){
     document.querySelector('#app').innerHTML = result;
 }
 
-console.log(loginHTML)
