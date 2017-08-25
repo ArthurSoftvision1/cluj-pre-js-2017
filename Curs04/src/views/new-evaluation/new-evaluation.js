@@ -7,6 +7,7 @@ const NewEvaluationPage = function(options = {}) {
         ${TechnicalLevelPicker(options.technicalLevelContent)},
         ${TextAreaBody(options.textAreaContent)},
         ${SelectAndInputFirst(options.legendDropDown)},
+        ${SubmitButtonArea(options.submitButton)},
         ${Footer(options.footerAreaSection)},
         `;
 }
@@ -163,6 +164,12 @@ const SelectAndInputFirst = function (options) {
    ${result}
     
 `;
+}
+
+const SubmitButtonArea = function (options = '') {
+    return `
+        ${options.submitLink}
+    `
 }
 
 const Footer = function (options = '') {
@@ -347,34 +354,80 @@ window.onload = function(){
         liContents:[
                 {
                     legendSelectorContent,
-                    selectName : 'class',
-                    labelText : `Classes`
+                    selectName : 'data',
+                    labelText : `Data types & variables`
                 },
                 {
                     legendSelectorContent,
-                    selectName : 'access',
-                    labelText : 'Access modifiers'
+                    selectName : 'functions',
+                    labelText : 'Functions'
                 }, {
                     legendSelectorContent,
-                    selectName : 'class',
-                    labelText : `Classes`
+                    selectName : 'prototype',
+                    labelText : `Prototype & OOP`
                 },
                 {
                     legendSelectorContent,
-                    selectName : 'access',
-                    labelText : 'Access modifiers'
+                    selectName : 'debugg',
+                    labelText : 'Debugging'
                 },
                 {
                     legendSelectorContent,
-                    selectName : 'class',
-                    labelText : `Classes`
+                    selectName : 'libraries',
+                    labelText : `Libraries`
                 },
                 {
                     legendSelectorContent,
-                    selectName : 'access',
-                    labelText : 'Access modifiers'
+                    selectName : 'object',
+                    labelText : 'Object manipulation'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'templating',
+                    labelText : 'Templating'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'testing',
+                    labelText : 'Testing(unit, E2E)'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'websockets',
+                    labelText : 'Websockets'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'promises',
+                    labelText : 'Promises'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'dommanipulation',
+                    labelText : 'DOM Manipulation'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'event',
+                    labelText : 'Event Handling'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'ajaxrequest',
+                    labelText : 'AJAX'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'tooling',
+                    labelText : 'Tooling'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'browser',
+                    labelText : 'Browser Engines'
                 }
                 
+      
         ],
         legendHeader : 'Javascript'
     },
@@ -382,13 +435,23 @@ window.onload = function(){
         liContents:[
                 {
                     legendSelectorContent,
-                    selectName : 'class',
-                    labelText : `Classes`
+                    selectName : 'backend',
+                    labelText : `Backend frameworks`
                 },
                 {
                     legendSelectorContent,
-                    selectName : 'access',
-                    labelText : 'Access modifiers'
+                    selectName : 'unittesting',
+                    labelText : 'Unit Testing'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'templatingoptions',
+                    labelText : 'Templating'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'domhandle',
+                    labelText : 'DOM Manipulation'
                 }
                 
         ],
@@ -399,6 +462,13 @@ window.onload = function(){
 
     const footerAreaSection = {
         footerText: '<p class="footer-description">Copyright@Softvision 2017</p>'
+    }
+
+    const submitButton = {
+        submitLink: `
+        <div class="submit-button-section">
+            <input class="submit-button" type="submit" value="SUBMIT">
+        </div>`
     }
 
     const textAreaContent = [
@@ -430,7 +500,8 @@ window.onload = function(){
         textAreaContent,
         legendSelectorContent,
         legendDropDown,
-        footerAreaSection
+        footerAreaSection,
+        submitButton
     } // const options = {technicalLevelContent} <=>const options = {technicalLevelContent : technicalLevelContent} 
     const result = [];
     result.push(NewEvaluationPage(options))
