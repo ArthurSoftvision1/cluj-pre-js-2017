@@ -2,7 +2,7 @@ const NewEvaluationPage = function(options = {}) {
     
 
     return `
-        ${NAV()},
+        ${NAV(options.navigationLinks)},
         ${CandidateDetailsForm()},
         ${TechnicalLevelPicker(options.technicalLevelContent)},
         ${TextAreaBody(options.textAreaContent)},
@@ -13,24 +13,21 @@ const NewEvaluationPage = function(options = {}) {
 }
 
 const NAV = function (options) {
-    const EvaluationLink = 'Evaluations'
-    const NewEvaluation = 'New Evaluation'
-    const LogoutLink = 'Logout'
-
-    return `
-    <nav class="row">
-        <div class="col-md-12 logo_section">
-            <div class="col-md-4 text_alignment">
-                <a href="evaluation.html"><img class="logo_image" src="img/logo-v2.png"/> </a>
+   const result = options.map(function (element) {
+        return `
+        <nav class="row">
+            <div class="col-md-12 logo_section">
+                <div class="col-md-4 text_alignment">
+                    <a href="evaluation.html"><img class="logo_image" src="img/logo-v2.png"/> </a>
+                </div>
+                <div class="col-md-4" style="padding-top: 8px;">
+                    <a class="evaluation_button border_bottom" href="#">${element}</a>
+                </div>
             </div>
-            <div class="col-md-4" style="padding-top: 8px;">
-                <a class="evaluation_button border_bottom" href="#">${EvaluationLink}</a>
-                <a class="border_bottom" href="#" style="margin-left: 100px;">${NewEvaluation}</a>
-                <a class="border_bottom" href="#" style="float:right;">${LogoutLink}</a>
-            </div>
-        </div>
-    </nav>
-    `;
+        </nav>
+        `
+   })
+   return result.join('')
 }
 
 const CandidateDetailsForm = function (options) {
@@ -190,6 +187,8 @@ const Footer = function (options = '') {
 }
 
 window.onload = function(){
+
+
     
     const legendSelectorContent =['0', '1', '2', '3']
 
@@ -488,20 +487,23 @@ window.onload = function(){
         }
     ]
 
-
     const technicalLevelContent = { 
         technicalHeader: "Technical level",
         technicalLevel: ['Trainee', 'Junior', 'Middle', 'Senior'],
         technicalLevelSection: ['1', '3', '3', '3']
      }
     
+     const navigationLinks = ['Evaluations', 'New Evaluation', 'Logout']
+     
+
     const options = {
         technicalLevelContent,
         textAreaContent,
         legendSelectorContent,
         legendDropDown,
         footerAreaSection,
-        submitButton
+        submitButton,
+        navigationLinks
     } // const options = {technicalLevelContent} <=>const options = {technicalLevelContent : technicalLevelContent} 
     const result = [];
     result.push(NewEvaluationPage(options))
