@@ -7,12 +7,7 @@ const NewEvaluationPage = function(options = {}) {
         ${TechnicalLevelPicker(options.technicalLevelContent)},
         ${TextAreaBody(options.textAreaContent)},
         ${SelectAndInputFirst(options.legendDropDown)},
-        ${SelectAndInputSecond()},
-        ${SelectAndInputThree()},
-        ${SelectAndInputFour()},
-        ${SelectAndInputFive()},
-        ${SelectAndInputSix()},
-        ${Footer()},
+        ${Footer(options.footerAreaSection)},
         `;
 }
 
@@ -145,7 +140,6 @@ const legendBoxes = function (options = {}){
     return result
 }
 
-
 const legendFinal = function(options = {}){
     return `<form class="language-form">
     <fieldset class="field-section">
@@ -165,396 +159,27 @@ const SelectAndInputFirst = function (options) {
 
     }).join('')
 
-
     return `
    ${result}
     
 `;
 }
 
-const SelectAndInputSecond = function () {
+const Footer = function (options = '') {
     return `
-    <form class="language-form">
-    <fieldset class="field-section">
-        <legend><h2>HTTP</h2></legend>
-        <ul class="technical-list">
-             <li>
-                 <label>Protocol</label> <select name="protocol">
-                 <option selected disabled>Evaluation</option>
-                 <option value="0">0</option>
-                 <option value="1">1</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-             </select> <br>
-                 <label>Headers</label> <select name="headers">
-                 <option selected disabled>Evaluation</option>
-                 <option value="0">0</option>
-                 <option value="1">1</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-             </select> <br>
-             </li>
+    <!--Footer section-->
+    <footer class="container-fluid footer-section">
+        <div class="col-md-4">
 
-            <li>
-                <label>Response codes</label> <select name="response">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-                <label>Request methods</label> <select name="request">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
+        </div>
+        <div class="col-md-4">
 
-            <li>
-                <label>REST</label> <select name="rest">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-                <label>Sessions & Cookies</label> <select name="sessions">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
-        </ul>
-    </fieldset>
-</form>
-    `;
-}
-
-const SelectAndInputThree = function () {
-
-    return `
-    <form class="language-form">
-    <fieldset class="field-section">
-        <legend><h2>HTML</h2></legend>
-        <ul class="technical-list">
-            <li>
-                <label>Doctype</label> <select name="doctype">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-                <label>Syntax rules</label> <select name="syntax">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
-
-            <li>
-                <label>Tags</label> <select name="tags">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-                <label>Attributes</label> <select name="attributes">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
-
-            <li>
-                <label>Basic SEO</label> <select name="seo">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
-        </ul>
-    </fieldset>
-</form>
-    `;
-}
-
-
-const SelectAndInputFour = function () {
-
-    return  `
-    <form class="language-form" style="text-align:center;">
-    <fieldset class="field-section">
-        <legend><h2>CSS</h2></legend>
-        <ul class="technical-list">
-            <li>
-                <label>Usage</label> <select name="usage">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-                <label>Selectors</label> <select name="selectors">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
-
-            <li>
-                <label>Box modelling</label> <select name="box">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-                <label>Styling</label> <select name="styling">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
-
-            <li>
-                <label>CSS 3.0</label> <select name="css">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-                <label>Dynamic Stylesheets</label><select name="dynamic">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
-        </ul>
-    </fieldset>
-</form>
-    `;
-}
-
-const SelectAndInputFive = function () {
-    return `
-    <form class="language-form">
-            <fieldset class="field-section">
-                <legend><h2>Javascript</h2></legend>
-                <ul class="technical-list">
-                    <li>
-                        <label>Data types & variables</label> <select name="data">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Functions</label> <select name="functions">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Prototype & OOP</label><select name="prototype">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Debugging</label> <select name="debugg">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Libraries</label> <select name="libraries">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Frameworks</label> <select name="frameworks">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                    </li>
-
-                    <li>
-                        <label>Object manipulation</label> <select name="object">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Templating</label> <select name="templating">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Testing(unit, E2E)</label> <select name="testing">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Websockets</label> <select name="websockets">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Promises</label> <select name="promises">
-                        <option selected disabled>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                    </li>
-
-                    <li>
-                        <label>DOM Manipulation</label> <select name="dommanipulation">
-                        <option>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Event Handling</label> <select name="event">
-                        <option>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>AJAX</label> <select name="ajaxrequest">
-                        <option>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Tooling</label> <select name="tooling">
-                        <option>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                        <label>Browser Engines</label><select name="browser">
-                        <option>Evaluation</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select> <br>
-                    </li>
-                </ul>
-            </fieldset>
-        </form>
-    `;
-}
-
-const SelectAndInputSix = function () {
-
-    return `
-    <form class="language-form">
-    <fieldset class="field-section">
-        <legend><h2>NodeJS</h2></legend>
-        <ul class="technical-list">
-            <li>
-                <label>Backend frameworks</label> <select name="backend">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-                <label>Unit Testing</label><select name="unittesting">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
-
-            <li>
-                <label>Templating</label> <select name="templatingoptions">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
-
-            <li>
-                <label>DOM Manipulation</label> <select name="domhandle">
-                <option selected disabled>Evaluation</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select> <br>
-            </li>
-        </ul>
-    </fieldset> <br>
-    <div class="submit-button-section">
-        <input class="submit-button" type="submit" value="SUBMIT">
-    </div>
-</form>
-    `;
-
-
-}
-
-const Footer = function () {
-    return `
-        <!--Footer section-->
-        <footer class="container-fluid footer-section">
-            <div class="col-md-4">
-
-            </div>
-            <div class="col-md-4">
-
-            </div>
-            <div class="col-md-4">
-                <p class="footer-description">Copyright@Softvision 2017</p>
-            </div>
-        </footer>
-            `;
+        </div>
+        <div class="col-md-4">
+            ${options.footerText}
+        </div>
+    </footer>
+        `
 }
 
 window.onload = function(){
@@ -575,13 +200,33 @@ window.onload = function(){
                 },
                 {
                     legendSelectorContent,
-                    selectName : 'protocol',
-                    labelText : 'Protocol'
+                    selectName : 'polymorphism',
+                    labelText : 'Polymorphism'
                 },
                 {
                     legendSelectorContent,
-                    selectName : 'headers',
-                    labelText : 'Headers'
+                    selectName : 'exception',
+                    labelText : 'Exception handling'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'pattern',
+                    labelText : 'Design patterns'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'regex',
+                    labelText : 'Regex'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'version',
+                    labelText : 'Version Control'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'track',
+                    labelText : 'Issue Tracking'
                 },
                 
         ],
@@ -591,24 +236,34 @@ window.onload = function(){
         liContents:[
                 {
                     legendSelectorContent,
-                    selectName : 'class',
-                    labelText : `Classes`
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'access',
-                    labelText : 'Access modifiers'
-                },
-                {
-                    legendSelectorContent,
                     selectName : 'protocol',
-                    labelText : 'Protocol'
+                    labelText : `Protocol`
                 },
                 {
                     legendSelectorContent,
                     selectName : 'headers',
                     labelText : 'Headers'
                 },
+                {
+                    legendSelectorContent,
+                    selectName : 'response',
+                    labelText : 'Response codes'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'request',
+                    labelText : 'Request methods'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'rest',
+                    labelText : 'REST'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'sessions',
+                    labelText : 'Sessions & Cookies'
+                }
                 
         ],
         legendHeader : 'HTTP'
@@ -618,13 +273,28 @@ window.onload = function(){
         liContents:[
                 {
                     legendSelectorContent,
-                    selectName : 'class',
-                    labelText : `Classes`
+                    selectName : 'doctype',
+                    labelText : `Doctype`
                 },
                 {
                     legendSelectorContent,
-                    selectName : 'access',
-                    labelText : 'Access modifiers'
+                    selectName : 'syntax',
+                    labelText : 'Syntax rules'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'tags',
+                    labelText : 'Tags'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'attributes',
+                    labelText : 'Attributes'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'syntax',
+                    labelText : 'Basic SEO'
                 }
                 
         ],
@@ -635,13 +305,38 @@ window.onload = function(){
         liContents:[
                 {
                     legendSelectorContent,
-                    selectName : 'class',
-                    labelText : `Classes`
+                    selectName : 'usage',
+                    labelText : `Usage`
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'selectors',
+                    labelText : 'Selectors'
                 },
                 {
                     legendSelectorContent,
                     selectName : 'access',
                     labelText : 'Access modifiers'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'box',
+                    labelText : 'Box modelling'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'styling',
+                    labelText : 'Styling'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'css',
+                    labelText : 'CSS 3.0'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'dynamic',
+                    labelText : 'Dynamic Stylesheets'
                 }
                 
         ],
@@ -701,6 +396,11 @@ window.onload = function(){
     },
     
     ]
+
+    const footerAreaSection = {
+        footerText: '<p class="footer-description">Copyright@Softvision 2017</p>'
+    }
+
     const textAreaContent = [
         {
             textAreaHeader: 'Should the candidate be hired?',
@@ -729,7 +429,8 @@ window.onload = function(){
         technicalLevelContent,
         textAreaContent,
         legendSelectorContent,
-        legendDropDown
+        legendDropDown,
+        footerAreaSection
     } // const options = {technicalLevelContent} <=>const options = {technicalLevelContent : technicalLevelContent} 
     const result = [];
     result.push(NewEvaluationPage(options))
