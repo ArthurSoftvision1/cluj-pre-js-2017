@@ -3,7 +3,7 @@ const NewEvaluationPage = function(options = {}) {
 
     return `
         ${NAV(options.navigationLinks)},
-        ${CandidateDetailsForm()},
+        ${CandidateDetailsForm(options.detailsForm)},
         ${TechnicalLevelPicker(options.technicalLevelContent)},
         ${TextAreaBody(options.textAreaContent)},
         ${SelectAndInputFirst(options.legendDropDown)},
@@ -31,17 +31,17 @@ const NAV = function (options) {
 }
 
 const CandidateDetailsForm = function (options) {
-
+const result = options.map(function (element) {
     return `
     <div class="row">
         <div class="container top_page_inputs">
-            <div class="col-md-3"><input class="candidate_input" type="text" name="lastname" placeholder="Candidate"/></div>
-            <div class="col-md-3"> <input class="interviewer_input" type="text" name="lastname" placeholder="Interviewer"/></div>
-            <div class="col-md-3"> <input class="calendar_input" type="password" name="lastname" placeholder="4/22/2012"/> </div>
-            <div class="col-md-3"><a href="evaluation.html"> <img style="width: 35px; margin-top: 18px;" src="img/2019-200.png"/> </a></div>
+            <div class="col-md-3">${element}</div>
         </div>
     </div>
-    `;
+    `
+    })
+    return result.join('')
+    
 }
 
 
@@ -495,6 +495,12 @@ window.onload = function(){
     
      const navigationLinks = ['Evaluations', 'New Evaluation', 'Logout']
      
+     const detailsForm = [
+         '<input class="candidate_input" type="text" name="lastname" placeholder="Candidate"/>',
+         '<input class="interviewer_input" type="text" name="lastname" placeholder="Interviewer"/>',
+         '<input class="calendar_input" type="password" name="lastname" placeholder="4/22/2012"/>',
+         `<a href="evaluation.html"> <img style="width: 35px; margin-top: 18px;" src="img/2019-200.png"></a>`
+        ]
 
     const options = {
         technicalLevelContent,
@@ -503,7 +509,8 @@ window.onload = function(){
         legendDropDown,
         footerAreaSection,
         submitButton,
-        navigationLinks
+        navigationLinks,
+        detailsForm
     } // const options = {technicalLevelContent} <=>const options = {technicalLevelContent : technicalLevelContent} 
     const result = [];
     result.push(NewEvaluationPage(options))
