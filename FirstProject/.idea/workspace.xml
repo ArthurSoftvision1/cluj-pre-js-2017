@@ -10,93 +10,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="colors.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/colors.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evaluation.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/evaluation.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2159">
-              <caret line="127" column="20" lean-forward="false" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feedback.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/feedback.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="209" column="3" lean-forward="true" selection-start-line="209" selection-start-column="3" selection-end-line="209" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new-evaluation.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/new-evaluation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="212" column="24" lean-forward="false" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/here/cluj-pre-js-2017/FirstProject/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evaluation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>right_description</find>
-      <find>results_image</find>
-      <find>left_image</find>
-      <find>right_image</find>
-      <find>footer_margin</find>
-      <find>feedback-image</find>
-      <find>header-form</find>
-      <find>navigation_bar</find>
-      <find>border_botto</find>
-      <find>new_evaluation</find>
-      <find>logout_button</find>
-      <find>footer_section</find>
       <find>footer_description</find>
       <find>logo_section</find>
       <find>text_alignment</find>
@@ -115,13 +32,22 @@
       <find>footer_area</find>
       <find>fieldset</find>
       <find>technical level</find>
+      <find>logo-i</find>
+      <find>logo-image</find>
+      <find>table</find>
+      <find>softvision</find>
+      <find>softvision logo</find>
+      <find>col-md-4</find>
+      <find>logout-button</find>
+      <find>logo-</find>
+      <find>logout</find>
+      <find>border-bottom</find>
+      <find>logout-</find>
+      <find>navigation-bar</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -141,8 +67,6 @@
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/js/index.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/assets/evaluation.less" />
-        <option value="$PROJECT_DIR$/evaluation.html" />
         <option value="$PROJECT_DIR$/assets/feedback.less" />
         <option value="$PROJECT_DIR$/assets/new-evaluation.less" />
         <option value="$PROJECT_DIR$/Curs04/login.html" />
@@ -153,6 +77,8 @@
         <option value="$PROJECT_DIR$/Curs04/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/new-evaluation.html" />
+        <option value="$PROJECT_DIR$/assets/evaluation.less" />
+        <option value="$PROJECT_DIR$/evaluation.html" />
       </list>
     </option>
   </component>
@@ -174,7 +100,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-145" />
     <option name="y" value="117" />
     <option name="width" value="1074" />
@@ -240,25 +166,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.evaluation.html">
+    <configuration name="evaluation.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FirstProject/evaluation.html" />
     <configuration name="evaluations.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FirstProject/Curs04/src/views/evaluations/evaluations.html" />
-    <configuration name="login.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FirstProject/Curs04/src/views/login/login.html" />
     <configuration name="new-evaluation.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FirstProject/Curs04/src/views/new-evaluation/new-evaluation.html" />
     <configuration name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FirstProject/test.html" />
     <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="test.js" working-dir="$PROJECT_DIR$" />
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.test.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.new-evaluation.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.evaluations.html" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.new-evaluation.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.evaluations.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.evaluation.html" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.evaluations.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.new-evaluation.html" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.evaluation.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.evaluations.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.new-evaluation.html" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.test.js" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
       </list>
     </recent_temporary>
   </component>
@@ -289,22 +216,21 @@
       <workItem from="1503470620446" duration="1327000" />
       <workItem from="1503491757253" duration="7176000" />
       <workItem from="1503555119127" duration="2023000" />
-      <workItem from="1503562974426" duration="4539000" />
+      <workItem from="1503562974426" duration="4797000" />
+      <workItem from="1503640851335" duration="8572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132470000" />
+    <option name="totallyTimeSpent" value="141300000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1380597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33804348" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -315,6 +241,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33804348" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -519,25 +446,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evaluation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/here/cluj-pre-js-2017/FirstProject/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/colors.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
@@ -550,60 +461,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/evaluation.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="127" column="20" lean-forward="false" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Curs04/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Curs04/.gitignore" />
     <entry file="file://$PROJECT_DIR$/Curs04/src/views/new-evaluation/new-evaluation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1746">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503498671942" expanded="true" signature="271:849" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="316:838" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="366:480" ph="..." />
-            <marker date="1503498671942" expanded="false" signature="523:540" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="541:823" ph="..." />
-            <marker date="1503498671942" expanded="false" signature="684:703" ph="..." />
-            <marker date="1503498671942" expanded="false" signature="781:793" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="945:1545" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="993:1534" ph="..." />
-            <marker date="1503498671942" expanded="false" signature="1453:1483" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="1649:1721" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="1761:2170" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="1809:1861" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="1910:1961" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="2009:2060" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="2108:2159" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="2201:3525" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="2245:2397" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="2274:2382" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="2441:2770" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="2471:2755" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="2814:3142" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="2843:3127" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="3186:3514" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="3215:3499" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="3623:3870" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="3899:4046" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="4075:4334" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="4472:4731" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="4507:4527" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="4562:4582" ph="..." />
-            <marker date="1503498671942" expanded="true" signature="4617:4713" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,7 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8852">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -625,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/feedback.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="209" column="3" lean-forward="true" selection-start-line="209" selection-start-column="3" selection-end-line="209" selection-end-column="3" />
+        <state relative-caret-position="3553">
+          <caret line="209" column="3" lean-forward="false" selection-start-line="209" selection-start-column="3" selection-end-line="209" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -634,15 +495,39 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/evaluation.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new-evaluation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="212" column="24" lean-forward="false" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
+        <state relative-caret-position="481">
+          <caret line="517" column="52" lean-forward="true" selection-start-line="517" selection-start-column="52" selection-end-line="517" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/here/cluj-pre-js-2017/FirstProject/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="91" column="32" lean-forward="false" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
           <folding />
         </state>
       </provider>
