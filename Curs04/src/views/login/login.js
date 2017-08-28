@@ -9,12 +9,11 @@ const LoginPage = function() {
 
 const LoginForm = function (options) {
     return `
-    <form class="feedback-interview-section">
+    <form id="form-login" class="feedback-interview-section">
     <div class="header-form-section">
          <h1 class="interview-text-area">Interview Feedback</h1>
-
-        <input class="username-area-input" type="text" name="lastname" placeholder="Username"/> <br>
-        <input class="password-area-input" type="password" name="lastname" placeholder="Password"/> <br>
+        <input id="username-field" class="username-area-input" type="text" name="lastname" placeholder="Username"/> <br>
+        <input id="password-field" class="password-area-input" type="password" name="lastname" placeholder="Password"/> <br>
         <input class="login-button" type="submit" value="Login">
     </div>
 </form>
@@ -67,16 +66,6 @@ const SubmitFeedbackResults = function (options) {
     `;
 };
 
-// const Footer = function (options) {
-//     return `
-//     <footer class="footer-margin">
-//     <div class="col-md-12 footer-padding">
-//         <p class="footer-section">Copyright@Softvision 2017</p>
-//     </div>
-//     </footer>
-//     `;
-// }
-
 const LoginHeader = function (options) {
     return `
     <header class="header-background-section">
@@ -96,11 +85,5 @@ const LoginHeader = function (options) {
     </div>
 </header>
     `;
-}
-
-window.onload = function(){
-    const result = [];
-    result.push(LoginPage({}))
-    document.querySelector('#app').innerHTML = result;
 }
 

@@ -105,7 +105,7 @@ function EvaluationsTable (options = {}) {
     `
 }
 
-window.onload = function () {
-    const appEl = document.querySelector("#app");
-    appEl.innerHTML = EvaluationsPage();
-}
+// window.onload = function () {
+//     const appEl = document.querySelector("#app");
+//     appEl.innerHTML = EvaluationsPage();
+// }

@@ -1,5 +1,328 @@
-const NewEvaluationPage = function(options = {}) {
+const NewEvaluationPage = function(optionss = {}) {
     
+    const legendSelectorContent =['0', '1', '2', '3']
+    
+        const legendDropDown = [{
+            liContents:[
+                {
+                    legendSelectorContent,
+                    selectName : 'class',
+                    labelText : `Classes`
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'access',
+                    labelText : 'Access modifiers'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'polymorphism',
+                    labelText : 'Polymorphism'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'exception',
+                    labelText : 'Exception handling'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'pattern',
+                    labelText : 'Design patterns'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'regex',
+                    labelText : 'Regex'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'version',
+                    labelText : 'Version Control'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'track',
+                    labelText : 'Issue Tracking'
+                },
+                    
+            ],
+            legendHeader : 'OOP, Design Patterns'
+        },
+        {
+            liContents:[
+                {
+                    legendSelectorContent,
+                    selectName : 'protocol',
+                    labelText : `Protocol`
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'headers',
+                    labelText : 'Headers'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'response',
+                    labelText : 'Response codes'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'request',
+                    labelText : 'Request methods'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'rest',
+                    labelText : 'REST'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'sessions',
+                    labelText : 'Sessions & Cookies'
+                }
+                
+            ],
+            legendHeader : 'HTTP'
+        },
+    
+        {
+            liContents:[
+                {
+                    legendSelectorContent,
+                    selectName : 'doctype',
+                    labelText : `Doctype`
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'syntax',
+                    labelText : 'Syntax rules'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'tags',
+                    labelText : 'Tags'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'attributes',
+                    labelText : 'Attributes'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'syntax',
+                    labelText : 'Basic SEO'
+                }
+                    
+            ],
+            legendHeader : 'HTML'
+        },
+    
+        {
+            liContents:[
+                {
+                    legendSelectorContent,
+                    selectName : 'usage',
+                    labelText : `Usage`
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'selectors',
+                    labelText : 'Selectors'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'access',
+                    labelText : 'Access modifiers'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'box',
+                    labelText : 'Box modelling'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'styling',
+                    labelText : 'Styling'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'css',
+                    labelText : 'CSS 3.0'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'dynamic',
+                    labelText : 'Dynamic Stylesheets'
+                }
+                    
+            ],
+            legendHeader : 'CSS'
+        },
+    
+        {
+            liContents:[
+                {
+                    legendSelectorContent,
+                    selectName : 'data',
+                    labelText : `Data types & variables`
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'functions',
+                    labelText : 'Functions'
+                }, {
+                    legendSelectorContent,
+                    selectName : 'prototype',
+                    labelText : `Prototype & OOP`
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'debugg',
+                    labelText : 'Debugging'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'libraries',
+                    labelText : `Libraries`
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'object',
+                    labelText : 'Object manipulation'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'templating',
+                    labelText : 'Templating'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'testing',
+                    labelText : 'Testing(unit, E2E)'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'websockets',
+                    labelText : 'Websockets'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'promises',
+                    labelText : 'Promises'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'dommanipulation',
+                    labelText : 'DOM Manipulation'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'event',
+                    labelText : 'Event Handling'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'ajaxrequest',
+                    labelText : 'AJAX'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'tooling',
+                    labelText : 'Tooling'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'browser',
+                    labelText : 'Browser Engines'
+                }
+                    
+            ],
+            legendHeader : 'Javascript'
+        },
+        {
+            liContents:[
+                {
+                    legendSelectorContent,
+                    selectName : 'backend',
+                    labelText : `Backend frameworks`
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'unittesting',
+                    labelText : 'Unit Testing'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'templatingoptions',
+                    labelText : 'Templating'
+                },
+                {
+                    legendSelectorContent,
+                    selectName : 'domhandle',
+                    labelText : 'DOM Manipulation'
+                }
+                    
+            ],
+            legendHeader : 'NodeJS'
+        },
+        
+        ]
+    
+        const footerAreaSection = {
+            footerText: '<p class="footer-description">Copyright@Softvision 2017</p>'
+        }
+    
+        const submitButton = {
+            submitLink: `
+            <div class="submit-button-section">
+                <input class="submit-button" type="submit" value="SUBMIT">
+            </div>`
+        }
+    
+        const textAreaContent = [
+            {
+                textAreaHeader: 'Should the candidate be hired?',
+                textAreaPlaceHolder: `The type of project that is suitable for the candidate
+                Is guidance required for the candidate`
+            },
+            {
+                textAreaHeader: 'General Impression',
+                textAreaPlaceHolder: `*required`
+            },
+            {
+                textAreaHeader: 'Workflow, Leadership & Soft Skills',
+                textAreaPlaceHolder: `Describe the environment in which the candidate works.
+                Describe any guidance or management experience`
+            }
+        ]
+    
+        const technicalLevelContent = { 
+            technicalHeader: "Technical level",
+            technicalLevel: ['Trainee', 'Junior', 'Middle', 'Senior'],
+            technicalLevelSection: ['1', '3', '3', '3']
+         }
+        
+         const navigationLinks = ['Evaluations', 'New Evaluation', 'Logout']
+         
+         const detailsForm = [
+             '<input class="candidate_input" type="text" name="candidate" placeholder="Candidate"/>',
+             '<input class="interviewer_input" type="text" name="interviewer" placeholder="Interviewer"/>',
+             '<input class="calendar_input" type="password" name="date" placeholder="4/22/2012"/>',
+             `<a href="evaluation.html"> <img style="width: 35px; margin-top: 18px;" src="img/2019-200.png"></a>`
+            ]
+    
+        const options = {
+            technicalLevelContent,
+            textAreaContent,
+            legendSelectorContent,
+            legendDropDown,
+            footerAreaSection,
+            submitButton,
+            navigationLinks,
+            detailsForm
+        } 
+
+
     return `
         ${NAV(options.navigationLinks)},
         ${CandidateDetailsForm(options.detailsForm)},
@@ -10,24 +333,6 @@ const NewEvaluationPage = function(options = {}) {
         ${Footer(options.footerAreaSection)},
         `;
 }
-
-// const NAV = function (options) {
-//    const result = options.map(function (element) {
-//         return `
-//         <nav class="row">
-//             <div class="col-md-12 logo_section">
-//                 <div class="col-md-4 text_alignment">
-//                     <a href="evaluation.html"><img class="logo_image" src="img/logo-v2.png"/> </a>
-//                 </div>
-//                 <div class="col-md-4" style="padding-top: 8px;">
-//                     <a class="evaluation_button border_bottom" href="#">${element}</a>
-//                 </div>
-//             </div>
-//         </nav>
-//         `
-//    })
-//    return result.join('')
-// }
 
 const CandidateDetailsForm = function (options) {
     const result = options.map(function (element) {
@@ -168,346 +473,3 @@ const SubmitButtonArea = function (options = '') {
     `
 }
 
-// const Footer = function (options = '') {
-//     return `
-//     <!--Footer section-->
-//     <footer class="container-fluid footer-section">
-//         <div class="col-md-4">
-
-//         </div>
-//         <div class="col-md-4">
-
-//         </div>
-//         <div class="col-md-4">
-//             ${options.footerText}
-//         </div>
-//     </footer>
-//         `
-// }
-
-// window.onload = function(){
-//     const legendSelectorContent =['0', '1', '2', '3']
-
-//     const legendDropDown = [{
-//         liContents:[
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'class',
-//                 labelText : `Classes`
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'access',
-//                 labelText : 'Access modifiers'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'polymorphism',
-//                 labelText : 'Polymorphism'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'exception',
-//                 labelText : 'Exception handling'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'pattern',
-//                 labelText : 'Design patterns'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'regex',
-//                 labelText : 'Regex'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'version',
-//                 labelText : 'Version Control'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'track',
-//                 labelText : 'Issue Tracking'
-//             },
-                
-//         ],
-//         legendHeader : 'OOP, Design Patterns'
-//     },
-//     {
-//         liContents:[
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'protocol',
-//                 labelText : `Protocol`
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'headers',
-//                 labelText : 'Headers'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'response',
-//                 labelText : 'Response codes'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'request',
-//                 labelText : 'Request methods'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'rest',
-//                 labelText : 'REST'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'sessions',
-//                 labelText : 'Sessions & Cookies'
-//             }
-            
-//         ],
-//         legendHeader : 'HTTP'
-//     },
-
-//     {
-//         liContents:[
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'doctype',
-//                 labelText : `Doctype`
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'syntax',
-//                 labelText : 'Syntax rules'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'tags',
-//                 labelText : 'Tags'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'attributes',
-//                 labelText : 'Attributes'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'syntax',
-//                 labelText : 'Basic SEO'
-//             }
-                
-//         ],
-//         legendHeader : 'HTML'
-//     },
-
-//     {
-//         liContents:[
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'usage',
-//                 labelText : `Usage`
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'selectors',
-//                 labelText : 'Selectors'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'access',
-//                 labelText : 'Access modifiers'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'box',
-//                 labelText : 'Box modelling'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'styling',
-//                 labelText : 'Styling'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'css',
-//                 labelText : 'CSS 3.0'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'dynamic',
-//                 labelText : 'Dynamic Stylesheets'
-//             }
-                
-//         ],
-//         legendHeader : 'CSS'
-//     },
-
-//     {
-//         liContents:[
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'data',
-//                 labelText : `Data types & variables`
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'functions',
-//                 labelText : 'Functions'
-//             }, {
-//                 legendSelectorContent,
-//                 selectName : 'prototype',
-//                 labelText : `Prototype & OOP`
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'debugg',
-//                 labelText : 'Debugging'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'libraries',
-//                 labelText : `Libraries`
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'object',
-//                 labelText : 'Object manipulation'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'templating',
-//                 labelText : 'Templating'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'testing',
-//                 labelText : 'Testing(unit, E2E)'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'websockets',
-//                 labelText : 'Websockets'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'promises',
-//                 labelText : 'Promises'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'dommanipulation',
-//                 labelText : 'DOM Manipulation'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'event',
-//                 labelText : 'Event Handling'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'ajaxrequest',
-//                 labelText : 'AJAX'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'tooling',
-//                 labelText : 'Tooling'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'browser',
-//                 labelText : 'Browser Engines'
-//             }
-                
-//         ],
-//         legendHeader : 'Javascript'
-//     },
-//     {
-//         liContents:[
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'backend',
-//                 labelText : `Backend frameworks`
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'unittesting',
-//                 labelText : 'Unit Testing'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'templatingoptions',
-//                 labelText : 'Templating'
-//             },
-//             {
-//                 legendSelectorContent,
-//                 selectName : 'domhandle',
-//                 labelText : 'DOM Manipulation'
-//             }
-                
-//         ],
-//         legendHeader : 'NodeJS'
-//     },
-    
-//     ]
-
-//     const footerAreaSection = {
-//         footerText: '<p class="footer-description">Copyright@Softvision 2017</p>'
-//     }
-
-//     const submitButton = {
-//         submitLink: `
-//         <div class="submit-button-section">
-//             <input class="submit-button" type="submit" value="SUBMIT">
-//         </div>`
-//     }
-
-//     const textAreaContent = [
-//         {
-//             textAreaHeader: 'Should the candidate be hired?',
-//             textAreaPlaceHolder: `The type of project that is suitable for the candidate
-//             Is guidance required for the candidate`
-//         },
-//         {
-//             textAreaHeader: 'General Impression',
-//             textAreaPlaceHolder: `*required`
-//         },
-//         {
-//             textAreaHeader: 'Workflow, Leadership & Soft Skills',
-//             textAreaPlaceHolder: `Describe the environment in which the candidate works.
-//             Describe any guidance or management experience`
-//         }
-//     ]
-
-//     const technicalLevelContent = { 
-//         technicalHeader: "Technical level",
-//         technicalLevel: ['Trainee', 'Junior', 'Middle', 'Senior'],
-//         technicalLevelSection: ['1', '3', '3', '3']
-//      }
-    
-//      const navigationLinks = ['Evaluations', 'New Evaluation', 'Logout']
-     
-//      const detailsForm = [
-//          '<input class="candidate_input" type="text" name="lastname" placeholder="Candidate"/>',
-//          '<input class="interviewer_input" type="text" name="lastname" placeholder="Interviewer"/>',
-//          '<input class="calendar_input" type="password" name="lastname" placeholder="4/22/2012"/>',
-//          `<a href="evaluation.html"> <img style="width: 35px; margin-top: 18px;" src="img/2019-200.png"></a>`
-//         ]
-
-//     const options = {
-//         technicalLevelContent,
-//         textAreaContent,
-//         legendSelectorContent,
-//         legendDropDown,
-//         footerAreaSection,
-//         submitButton,
-//         navigationLinks,
-//         detailsForm
-    // } // const options = {technicalLevelContent} <=>const options = {technicalLevelContent : technicalLevelContent} 
-    // const result = [];
-    // result.push(NewEvaluationPage(options))
-    // document.querySelector('#app').innerHTML = result;
-// }
