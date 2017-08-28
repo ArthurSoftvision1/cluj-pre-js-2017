@@ -15,6 +15,7 @@ const Footer = function () {
     `;
 }
 
+
 const NAV = function (options={}) {
     return  `
         <div class="row">
@@ -26,10 +27,10 @@ const NAV = function (options={}) {
                 </div>
                 <div class="col-md-4 evaluation-button" style="padding-top: 4px;">
                     <!--Evaluation navbar button-->
-                    <a class="border-bottom" href="#">Evaluations</a>
+                    <a id="evaluation-page" class="border-bottom" href="#">Evaluations</a>
 
                     <!--New Evaluation button-->
-                    <a class="new-evaluation border-bottom" href="#" style="margin-left: 100px;">New Evaluation</a>
+                    <a id="new-evaluation-page" class="new-evaluation border-bottom" href="#" style="margin-left: 100px;">New Evaluation</a>
                 </div>
                 <div class="col-md-4" style="padding-top: 4px;">
                     <!--Logout button-->
