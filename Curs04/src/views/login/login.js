@@ -67,15 +67,15 @@ const SubmitFeedbackResults = function (options) {
     `;
 };
 
-const Footer = function (options) {
-    return `
-    <footer class="footer-margin">
-    <div class="col-md-12 footer-padding">
-        <p class="footer-section">Copyright@Softvision 2017</p>
-    </div>
-    </footer>
-    `;
-}
+// const Footer = function (options) {
+//     return `
+//     <footer class="footer-margin">
+//     <div class="col-md-12 footer-padding">
+//         <p class="footer-section">Copyright@Softvision 2017</p>
+//     </div>
+//     </footer>
+//     `;
+// }
 
 const LoginHeader = function (options) {
     return `
@@ -104,4 +104,3 @@ window.onload = function(){
     document.querySelector('#app').innerHTML = result;
 }
 
-console.log(loginHTML)

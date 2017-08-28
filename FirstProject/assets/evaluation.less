@@ -3,10 +3,33 @@
 //Import colors file
 @import 'colors';
 
-.navigation_bar {
+.logout-button {
+  float: right;
+  padding-top: 15px;
+}
+
+.evaluations-link {
+  margin-top: 15px;
+}
+
+.header-links {
+  display: inline-flex;
+}
+
+
+.container-section {
+  margin-top: 200px;
+}
+
+.table-section {
+  width:70%;
+  margin: 0 auto;
+}
+
+.navigation-bar {
   border-bottom: 2px solid @darkgrey;
-  padding-top: 12px;
-  padding-bottom: 14px;
+  padding-bottom: 5px;
+  float: right;
 }
 
 .left_image {
@@ -44,7 +67,7 @@ td {
 }
 
 /*Footer section*/
-.footer_section {
+.footer-section {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -59,11 +82,12 @@ table tr th {
   padding: 10px 0 10px 0;
 }
 
-.logo_image {
-  width: 40%;
+.logo-image {
+  width: 15%;
+  padding-right: 130px;
 }
 
-.footer_description {
+.footer-description {
   padding: 25px 0 12px 0;
   font-weight:bold;
   font-size:16px;
@@ -74,19 +98,15 @@ table tr th {
   margin-top: 120px;
 }
 
-.col-md-4 {
-  text-align:center;
-}
-
-.evaluation_button {
+.evaluation-button {
   padding-top: 4px;
 }
 
-.new_evaluation {
+.new-evaluation {
   margin-left: 100px;
 }
 
-a.border_bottom:hover {
+a.border-bottom:hover {
   border-bottom: 4px solid @blue;
   border-bottom-width: 7px;
 }
@@ -97,7 +117,7 @@ table {
 
 /*Evaluation html*/
 
-.add_button {
+.add-button {
   background-color: @lightBlue;
   margin:8px 0;
   color: white;
@@ -110,7 +130,7 @@ table {
 /* Large screens ----------- */
 @media screen and (max-width: 1824px) and (min-width: 1200px) {
   /* Styles */
-  .add_button {
+  .add-button {
     background-color: @lightBlue;
     margin: 8px 0;
     color: white;
@@ -120,11 +140,11 @@ table {
     border: 1px solid @lightBlue;
   }
 
-  .logout_button {
-    float: none!important;
+  .logout-button {
+   float: right;
   }
 
-  .border_bottom {
+  .border-bottom {
     font-size: 17px;
   }
 }
@@ -132,7 +152,7 @@ table {
 /* Desktops and laptops ----------- */
 @media screen and (max-width: 1200px) and (min-width: 1024px) {
   /* Styles */
-  .add_button {
+  .add-button {
     background-color: @lightBlue;
     margin: 8px 0;
     color: white;
@@ -142,11 +162,11 @@ table {
     border: 1px solid @lightBlue;
   }
 
-  .logout_button {
+  .logout-button {
     float: none!important;
   }
 
-  .border_bottom {
+  .border-bottom {
     font-size: 16px;
   }
 
@@ -155,7 +175,7 @@ table {
 /* Desktops and laptops ----------- */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   /* Styles */
-  .add_button {
+  .add-button {
     background-color: @lightBlue;
     margin: 8px 0;
     color: white;
@@ -165,22 +185,22 @@ table {
     border: 1px solid @lightBlue;
   }
 
-  .logout_button {
+  .logout-button {
     float: none!important;
   }
 
-  .border_bottom {
+  .border-bottom {
     font-size: 14px;
   }
 }
 
 /*Screen between 699px and 768px*/
 @media screen and (max-width: 768px) and (min-width: 699px) {
-  .logout_button {
+  .logout-button {
     float: none!important;
   }
 
-  .add_button {
+  .add-button {
     background-color: @lightBlue;
     margin: 8px 0;
     color: white;
@@ -190,22 +210,22 @@ table {
     border: 1px solid @lightBlue;
   }
 
-  .border_bottom {
+  .border-bottom {
     font-size: 14px;
   }
 
-  .navigation_bar .col-md-4 {
+  .navigation-bar .col-md-4 {
     margin-bottom: 30px;
   }
 }
 
 /*Screen between 529px and 699px*/
 @media screen and (max-width: 699px) and (min-width: 520px) {
-  .logout_button {
+  .logout-button {
     float: none!important;
   }
 
-  .add_button {
+  .add-button {
     background-color: @lightBlue;
     margin: 8px 0;
     color: white;
@@ -215,11 +235,11 @@ table {
     border: 1px solid @lightBlue;
   }
 
-  .border_bottom {
+  .border-bottom {
     font-size: 14px;
   }
 
-  .navigation_bar .col-md-4 {
+  .navigation-bar .col-md-4 {
     margin-bottom: 30px;
   }
 
@@ -227,15 +247,15 @@ table {
 
 /*Screen between 320px and 520px*/
 @media screen and (max-width: 520px) and (min-width: 320px) {
-  .logout_button {
+  .logout-button {
     float: none!important;
   }
 
-  .border_bottom {
+  .border-bottom {
     font-size: 14px;
   }
 
-  .navigation_bar .col-md-4 {
+  .navigation-bar .col-md-4 {
     margin-bottom: 30px;
   }
 

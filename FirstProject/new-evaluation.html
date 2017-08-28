@@ -8,34 +8,35 @@
     <link rel="stylesheet/less" href="assets/new-evaluation.less" type="text/css"/>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+    <script src="../../Desktop/here/cluj-pre-js-2017/Curs04/src/views/new-evaluation/new-evaluation.js"></script>
 </head>
 
 <body>
     <nav class="row">
-        <div class="col-md-12 logo_section">
-            <div class="col-md-4 text_alignment">
-                <a href="evaluation.html"><img class="logo_image" src="img/logo-v2.png"/> </a>
+        <div class="col-md-12 logo-section">
+            <div class="col-md-4 text-alignment">
+                <a href="evaluation.html"><img class="logo-image" src="img/logo-v2.png"/> </a>
             </div>
             <div class="col-md-4" style="padding-top: 8px;">
-                <a class="evaluation_button border_bottom" href="#">Evaluations</a>
-                <a class="border_bottom" href="#" style="margin-left: 100px;">New Evaluation</a>
-                <a class="border_bottom" href="#" style="float:right;">Logout</a>
+                <a class="evaluation-button border-bottom" href="#">Evaluations</a>
+                <a class="border-bottom" href="#" style="margin-left: 100px;">New Evaluation</a>
+                <a class="border-bottom" href="#" style="float:right;">Logout</a>
             </div>
         </div>
     </nav>
 
     <div class="row">
-        <div class="container top_page_inputs">
-            <div class="col-md-3"><input class="candidate_input" type="text" name="lastname" placeholder="Candidate"/></div>
-            <div class="col-md-3"> <input class="interviewer_input" type="text" name="lastname" placeholder="Interviewer"/></div>
-            <div class="col-md-3"> <input class="calendar_input" type="password" name="lastname" placeholder="4/22/2012"/> </div>
+        <div class="container top-page-inputs">
+            <div class="col-md-3"><input class="candidate-input" type="text" name="lastname" placeholder="Candidate"/></div>
+            <div class="col-md-3"> <input class="interviewer-input" type="text" name="lastname" placeholder="Interviewer"/></div>
+            <div class="col-md-3"> <input class="calendar-input" type="password" name="lastname" placeholder="4/22/2012"/> </div>
             <div class="col-md-3"><a href="evaluation.html"> <img style="width: 35px; margin-top: 18px;" src="img/2019-200.png"/> </a></div>
         </div>
     </div>
 
     <div class="container_technical_evaluation">
         <div class="row">
-            <h2 class="description_section">Technical level</h2>
+            <h2 class="description-section">Technical level</h2>
         </div>
 
         <div class="row level_evaluation">
@@ -85,7 +86,7 @@
         </div>
 
         <div class="row_first">
-            <h2 class="description_section">Should the candidate be hired?</h2>
+            <h2 class="description-section">Should the candidate be hired?</h2>
             <textarea cols="164" placeholder="The type of project that is suitable for the candidate
 Is guidance required for the candidate
 " ></textarea>
@@ -93,24 +94,24 @@ Is guidance required for the candidate
         </div>
 
         <div class="row_first">
-            <h2 class="description_section">General Impression</h2>
+            <h2 class="description-section">General Impression</h2>
             <textarea cols="164" placeholder="*required
 " ></textarea>
 
         </div>
 
         <div class="row_first">
-            <h2 class="description_section">Workflow, Leadership & Soft Skills</h2>
+            <h2 class="description-section">Workflow, Leadership & Soft Skills</h2>
             <textarea cols="164" placeholder="Describe the environment in which the candidate works.
 Describe any guidance or management experience
 " ></textarea>
 
         </div>
 
-        <form class="language_form">
-            <fieldset class="field_section">
+        <form class="language-form">
+            <fieldset class="field-section">
                 <legend><h2>OOP, Design Patterns</h2></legend>
-                <ul>
+                <ul class="technical-list">
                         <li>
                             <label>Classes</label> <select name="class">
                             <option selected disabled>Evaluation</option>
@@ -180,68 +181,70 @@ Describe any guidance or management experience
             </fieldset>
         </form>
 
-        <form class="language_form">
-            <fieldset class="field_section">
+        <form class="language-form">
+            <fieldset class="field-section">
                 <legend><h2>HTTP</h2></legend>
-                <ul>
-                         <li>
-                             <label>Protocol</label> <select name="protocol">
-                             <option selected disabled>Evaluation</option>
-                             <option value="0">0</option>
-                             <option value="1">1</option>
-                             <option value="2">2</option>
-                             <option value="3">3</option>
-                         </select> <br>
-                             <label>Headers</label> <select name="headers">
-                             <option selected disabled>Evaluation</option>
-                             <option value="0">0</option>
-                             <option value="1">1</option>
-                             <option value="2">2</option>
-                             <option value="3">3</option>
-                         </select> <br>
-                         </li>
+                <ul class="technical-list">
+                     <li>
+                         <label>Protocol</label> <select name="protocol">
+                         <option selected disabled>Evaluation</option>
+                         <option value="0">0</option>
+                         <option value="1">1</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                     </select> <br>
+                         <label>Headers</label> <select name="headers">
+                         <option selected disabled>Evaluation</option>
+                         <option value="0">0</option>
+                         <option value="1">1</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                     </select> <br>
+                     </li>
 
-                        <li>
-                            <label>Response codes</label> <select name="response">
-                            <option selected disabled>Evaluation</option>
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select> <br>
-                            <label>Request methods</label> <select name="request">
-                            <option selected disabled>Evaluation</option>
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select> <br>
-                        </li>
+                    <li>
+                        <label>Response codes</label> <select name="response">
+                        <option selected disabled>Evaluation</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select> <br>
 
-                        <li>
-                            <label>REST</label> <select name="rest">
-                            <option selected disabled>Evaluation</option>
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select> <br>
-                            <label>Sessions & Cookies</label> <select name="sessions">
-                            <option selected disabled>Evaluation</option>
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select> <br>
-                        </li>
-                    </ul>
+                        <label>Request methods</label> <select name="request">
+                        <option selected disabled>Evaluation</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select> <br>
+                    </li>
+
+                    <li>
+                        <label>REST</label> <select name="rest">
+                        <option selected disabled>Evaluation</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select> <br>
+
+                        <label>Sessions & Cookies</label> <select name="sessions">
+                        <option selected disabled>Evaluation</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select> <br>
+                    </li>
+                </ul>
             </fieldset>
         </form>
 
-        <form class="language_form">
-            <fieldset class="field_section">
+        <form class="language-form">
+            <fieldset class="field-section">
                 <legend><h2>HTML</h2></legend>
-                <ul>
+                <ul class="technical-list">
                     <li>
                         <label>Doctype</label> <select name="doctype">
                         <option selected disabled>Evaluation</option>
@@ -250,6 +253,7 @@ Describe any guidance or management experience
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select> <br>
+
                         <label>Syntax rules</label> <select name="syntax">
                         <option selected disabled>Evaluation</option>
                         <option value="0">0</option>
@@ -257,6 +261,7 @@ Describe any guidance or management experience
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select> <br>
+
                     </li>
 
                     <li>
@@ -289,10 +294,10 @@ Describe any guidance or management experience
             </fieldset>
         </form>
 
-        <form class="language_form" style="text-align:center;">
-            <fieldset class="field_section">
+        <form class="language-form" style="text-align:center;">
+            <fieldset class="field-section">
                 <legend><h2>CSS</h2></legend>
-                <ul>
+                <ul class="technical-list">
                     <li>
                         <label>Usage</label> <select name="usage">
                         <option selected disabled>Evaluation</option>
@@ -347,10 +352,10 @@ Describe any guidance or management experience
             </fieldset>
         </form>
 
-        <form class="language_form">
-            <fieldset class="field_section">
+        <form class="language-form">
+            <fieldset class="field-section">
                 <legend><h2>Javascript</h2></legend>
-                <ul>
+                <ul class="technical-list">
                     <li>
                         <label>Data types & variables</label> <select name="data">
                         <option selected disabled>Evaluation</option>
@@ -475,10 +480,10 @@ Describe any guidance or management experience
             </fieldset>
         </form>
 
-        <form class="language_form">
-            <fieldset class="field_section">
+        <form class="language-form">
+            <fieldset class="field-section">
                 <legend><h2>NodeJS</h2></legend>
-                <ul>
+                <ul class="technical-list">
                     <li>
                         <label>Backend frameworks</label> <select name="backend">
                         <option selected disabled>Evaluation</option>
@@ -517,14 +522,14 @@ Describe any guidance or management experience
                     </li>
                 </ul>
             </fieldset> <br>
-            <div class="submit_button_section">
-                <input class="submit_button" type="submit" value="SUBMIT">
+            <div class="submit-button-section">
+                <input class="submit-button" type="submit" value="SUBMIT">
             </div>
         </form>
     </div>
 
     <footer class="container-fluid">
-        <p class="footer_area">Copyright@Softvision 2017</p>
+        <p class="footer-area">Copyright@Softvision 2017</p>
     </footer>
 </body>
 </html>
