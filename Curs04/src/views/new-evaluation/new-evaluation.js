@@ -1,6 +1,5 @@
 const NewEvaluationPage = function(options = {}) {
     
-
     return `
         ${NAV(options.navigationLinks)},
         ${CandidateDetailsForm(options.detailsForm)},
@@ -31,14 +30,14 @@ const NAV = function (options) {
 }
 
 const CandidateDetailsForm = function (options) {
-const result = options.map(function (element) {
-    return `
-    <div class="row">
-        <div class="container top_page_inputs">
-            <div class="col-md-3">${element}</div>
+    const result = options.map(function (element) {
+        return `
+        <div class="row">
+            <div class="container top_page_inputs">
+                <div class="col-md-3">${element}</div>
+            </div>
         </div>
-    </div>
-    `
+        `
     })
     return result.join('')
     
@@ -187,121 +186,118 @@ const Footer = function (options = '') {
 }
 
 window.onload = function(){
-
-
-    
     const legendSelectorContent =['0', '1', '2', '3']
 
     const legendDropDown = [{
         liContents:[
-                {
-                    legendSelectorContent,
-                    selectName : 'class',
-                    labelText : `Classes`
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'access',
-                    labelText : 'Access modifiers'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'polymorphism',
-                    labelText : 'Polymorphism'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'exception',
-                    labelText : 'Exception handling'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'pattern',
-                    labelText : 'Design patterns'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'regex',
-                    labelText : 'Regex'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'version',
-                    labelText : 'Version Control'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'track',
-                    labelText : 'Issue Tracking'
-                },
+            {
+                legendSelectorContent,
+                selectName : 'class',
+                labelText : `Classes`
+            },
+            {
+                legendSelectorContent,
+                selectName : 'access',
+                labelText : 'Access modifiers'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'polymorphism',
+                labelText : 'Polymorphism'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'exception',
+                labelText : 'Exception handling'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'pattern',
+                labelText : 'Design patterns'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'regex',
+                labelText : 'Regex'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'version',
+                labelText : 'Version Control'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'track',
+                labelText : 'Issue Tracking'
+            },
                 
         ],
         legendHeader : 'OOP, Design Patterns'
     },
     {
         liContents:[
-                {
-                    legendSelectorContent,
-                    selectName : 'protocol',
-                    labelText : `Protocol`
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'headers',
-                    labelText : 'Headers'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'response',
-                    labelText : 'Response codes'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'request',
-                    labelText : 'Request methods'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'rest',
-                    labelText : 'REST'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'sessions',
-                    labelText : 'Sessions & Cookies'
-                }
-                
+            {
+                legendSelectorContent,
+                selectName : 'protocol',
+                labelText : `Protocol`
+            },
+            {
+                legendSelectorContent,
+                selectName : 'headers',
+                labelText : 'Headers'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'response',
+                labelText : 'Response codes'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'request',
+                labelText : 'Request methods'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'rest',
+                labelText : 'REST'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'sessions',
+                labelText : 'Sessions & Cookies'
+            }
+            
         ],
         legendHeader : 'HTTP'
     },
 
     {
         liContents:[
-                {
-                    legendSelectorContent,
-                    selectName : 'doctype',
-                    labelText : `Doctype`
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'syntax',
-                    labelText : 'Syntax rules'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'tags',
-                    labelText : 'Tags'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'attributes',
-                    labelText : 'Attributes'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'syntax',
-                    labelText : 'Basic SEO'
-                }
+            {
+                legendSelectorContent,
+                selectName : 'doctype',
+                labelText : `Doctype`
+            },
+            {
+                legendSelectorContent,
+                selectName : 'syntax',
+                labelText : 'Syntax rules'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'tags',
+                labelText : 'Tags'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'attributes',
+                labelText : 'Attributes'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'syntax',
+                labelText : 'Basic SEO'
+            }
                 
         ],
         legendHeader : 'HTML'
@@ -309,41 +305,41 @@ window.onload = function(){
 
     {
         liContents:[
-                {
-                    legendSelectorContent,
-                    selectName : 'usage',
-                    labelText : `Usage`
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'selectors',
-                    labelText : 'Selectors'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'access',
-                    labelText : 'Access modifiers'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'box',
-                    labelText : 'Box modelling'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'styling',
-                    labelText : 'Styling'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'css',
-                    labelText : 'CSS 3.0'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'dynamic',
-                    labelText : 'Dynamic Stylesheets'
-                }
+            {
+                legendSelectorContent,
+                selectName : 'usage',
+                labelText : `Usage`
+            },
+            {
+                legendSelectorContent,
+                selectName : 'selectors',
+                labelText : 'Selectors'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'access',
+                labelText : 'Access modifiers'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'box',
+                labelText : 'Box modelling'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'styling',
+                labelText : 'Styling'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'css',
+                labelText : 'CSS 3.0'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'dynamic',
+                labelText : 'Dynamic Stylesheets'
+            }
                 
         ],
         legendHeader : 'CSS'
@@ -351,107 +347,106 @@ window.onload = function(){
 
     {
         liContents:[
-                {
-                    legendSelectorContent,
-                    selectName : 'data',
-                    labelText : `Data types & variables`
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'functions',
-                    labelText : 'Functions'
-                }, {
-                    legendSelectorContent,
-                    selectName : 'prototype',
-                    labelText : `Prototype & OOP`
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'debugg',
-                    labelText : 'Debugging'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'libraries',
-                    labelText : `Libraries`
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'object',
-                    labelText : 'Object manipulation'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'templating',
-                    labelText : 'Templating'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'testing',
-                    labelText : 'Testing(unit, E2E)'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'websockets',
-                    labelText : 'Websockets'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'promises',
-                    labelText : 'Promises'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'dommanipulation',
-                    labelText : 'DOM Manipulation'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'event',
-                    labelText : 'Event Handling'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'ajaxrequest',
-                    labelText : 'AJAX'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'tooling',
-                    labelText : 'Tooling'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'browser',
-                    labelText : 'Browser Engines'
-                }
+            {
+                legendSelectorContent,
+                selectName : 'data',
+                labelText : `Data types & variables`
+            },
+            {
+                legendSelectorContent,
+                selectName : 'functions',
+                labelText : 'Functions'
+            }, {
+                legendSelectorContent,
+                selectName : 'prototype',
+                labelText : `Prototype & OOP`
+            },
+            {
+                legendSelectorContent,
+                selectName : 'debugg',
+                labelText : 'Debugging'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'libraries',
+                labelText : `Libraries`
+            },
+            {
+                legendSelectorContent,
+                selectName : 'object',
+                labelText : 'Object manipulation'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'templating',
+                labelText : 'Templating'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'testing',
+                labelText : 'Testing(unit, E2E)'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'websockets',
+                labelText : 'Websockets'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'promises',
+                labelText : 'Promises'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'dommanipulation',
+                labelText : 'DOM Manipulation'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'event',
+                labelText : 'Event Handling'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'ajaxrequest',
+                labelText : 'AJAX'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'tooling',
+                labelText : 'Tooling'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'browser',
+                labelText : 'Browser Engines'
+            }
                 
-      
         ],
         legendHeader : 'Javascript'
     },
     {
         liContents:[
-                {
-                    legendSelectorContent,
-                    selectName : 'backend',
-                    labelText : `Backend frameworks`
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'unittesting',
-                    labelText : 'Unit Testing'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'templatingoptions',
-                    labelText : 'Templating'
-                },
-                {
-                    legendSelectorContent,
-                    selectName : 'domhandle',
-                    labelText : 'DOM Manipulation'
-                }
+            {
+                legendSelectorContent,
+                selectName : 'backend',
+                labelText : `Backend frameworks`
+            },
+            {
+                legendSelectorContent,
+                selectName : 'unittesting',
+                labelText : 'Unit Testing'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'templatingoptions',
+                labelText : 'Templating'
+            },
+            {
+                legendSelectorContent,
+                selectName : 'domhandle',
+                labelText : 'DOM Manipulation'
+            }
                 
         ],
         legendHeader : 'NodeJS'
