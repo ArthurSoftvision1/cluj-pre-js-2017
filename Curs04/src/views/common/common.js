@@ -15,6 +15,7 @@ const Footer = function () {
     `;
 }
 
+
 const NAV = function (options={}) {
     return  `
         <div class="row">
