@@ -84,7 +84,7 @@ function EvaluationsTableBody (options = {}) {
     <tbody>    
         ${rowsEl}
     </tbody>
-    `
+            `
 }
 
 function EvaluationsTable (options = {}) {
@@ -102,10 +102,5 @@ function EvaluationsTable (options = {}) {
             })}
         </table>
     </section>
-    `
+            `;
 }
-
-// window.onload = function () {
-//     const appEl = document.querySelector("#app");
-//     appEl.innerHTML = EvaluationsPage();
-// }
