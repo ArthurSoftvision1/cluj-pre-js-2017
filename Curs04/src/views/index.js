@@ -5,6 +5,7 @@ window.onload = function(){
 
    const loginFormSection = document.getElementById("form-login")
 
+    const myObj = {}
 
    const goToNewEvaluationPage = function(event) {
         event.preventDefault();
@@ -12,6 +13,16 @@ window.onload = function(){
 
         const evaluationButton = document.getElementById("evaluation-page")
         evaluationButton.addEventListener("click", goToEvaluationsPage)
+
+        const getSelectorAll = document.getElementsByTagName("select")
+        getSelectorAll.forEach(function(el) {
+           const nameSelector = el.name
+           const valueSelector = el.value  
+
+           myObj[nameSelector] = valueSelector
+
+           console.log(myObj)
+        })
     }
 
     const goToEvaluationsPage = function() {
