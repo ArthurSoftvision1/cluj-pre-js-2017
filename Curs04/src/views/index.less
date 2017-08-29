@@ -30,10 +30,6 @@ body {
     background-color: lightgrey;
 }
 
-.feedback-image {
-    width: 70%;
-}
-
 a {
     text-decoration: none;
     cursor: pointer;
@@ -43,11 +39,12 @@ a {
 }
 
 .footer-section {
-    padding: 25px 0 19px;
     font-weight: bold;
     font-size: 16px;
     color: @grey;
     text-align: right;
+    position: fixed;
+    bottom: 0;
 }
 
 .feedback-interview-section {
@@ -66,7 +63,7 @@ a {
 
 .header-background-section {
     height: 640px;
-    background-image: url(../img/feedback-banner.jpg);
+    // background-image: url(img/feedback-banner.jpg);
     width: 100%;
 }
 
@@ -100,7 +97,23 @@ a {
 }
 
 .text-description-2 {
-    margin-top:150px;
+    margin-top: 150px;
+}
+
+.right-text-description {
+    width: 50%;
+    float: right;
+    padding-right: 30px;
+}
+
+.feedback-image {
+    float: left !important;
+    width: 200px;
+}
+
+.left-text-description {
+    width: 50%;
+    float: left;
 }
 
 .footer-margin {
@@ -129,15 +142,14 @@ a {
     }
 
     .feedback-image {
-    width: 100%;
+        width: 100%;
     }
-
 
     .header-form-section {
-    width: 87%;
-    margin: 0 40px auto auto;
+        width: 87%;
+        margin: 0 40px auto auto;
     }
-    }
+}
 
 /*Screen between 520px and 699px*/
 @media screen and (max-width: 699px) and (min-width: 520px) {
