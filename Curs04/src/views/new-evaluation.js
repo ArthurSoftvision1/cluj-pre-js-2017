@@ -275,7 +275,7 @@ const NewEvaluationPage = function(optionss = {}) {
         const submitButton = {
             submitLink: `
             <div class="submit-button-section">
-                <input class="submit-button" type="submit" value="SUBMIT">
+                <input id="submit-button" class="submit-button" type="submit" value="SUBMIT">
             </div>`
         }
     
@@ -308,7 +308,7 @@ const NewEvaluationPage = function(optionss = {}) {
              '<input class="candidate_input" type="text" name="candidate" placeholder="Candidate"/>',
              '<input class="interviewer_input" type="text" name="interviewer" placeholder="Interviewer"/>',
              '<input class="calendar_input" type="password" name="date" placeholder="4/22/2012"/>',
-             `<a href="evaluation.html"> <img style="width: 35px; margin-top: 18px;" src="img/2019-200.png"></a>`
+             `<a href="evaluation.html"> <img class="calendar-date" src="img/2019-200.png"></a>`
             ]
     
         const options = {
