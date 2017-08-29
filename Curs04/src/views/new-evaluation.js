@@ -296,10 +296,10 @@ const NewEvaluationPage = function(optionss = {}) {
             }
         ]
     
-        const technicalLevelContent = { 
+        const technicalLevelContent = {
             technicalHeader: "Technical level",
             technicalLevel: ['Trainee', 'Junior', 'Middle', 'Senior'],
-            technicalLevelSection: ['1', '3', '3', '3']
+            technicalLevelSection: ['1', '3', '3', '3'],
          }
         
          const navigationLinks = ['Evaluations', 'New Evaluation', 'Logout']
@@ -307,7 +307,7 @@ const NewEvaluationPage = function(optionss = {}) {
          const detailsForm = [
              '<input class="candidate_input" type="text" name="candidate" placeholder="Candidate"/>',
              '<input class="interviewer_input" type="text" name="interviewer" placeholder="Interviewer"/>',
-             '<input class="calendar_input" type="password" name="date" placeholder="4/22/2012"/>',
+             '<input class="calendar_input" type="date" name="date" placeholder="4/22/2012"/>',
              `<a href="evaluation.html"> <img class="calendar-date" src="img/2019-200.png"></a>`
             ]
     
@@ -321,7 +321,6 @@ const NewEvaluationPage = function(optionss = {}) {
             navigationLinks,
             detailsForm
         } 
-
 
     return `
         ${NAV(options.navigationLinks)},
@@ -383,9 +382,7 @@ const TechnicalLevelBoxSection = function (options = {} ) {
     const result = options.map(function(element) {
         return `
         <div class="col-md-3 bullets_menu">
-            <form action="">
-                ${TechnicalLevelRadioSubsection(element)}
-            </form>
+            ${TechnicalLevelRadioSubsection(element)}
         </div>
         `
     }).join('')
