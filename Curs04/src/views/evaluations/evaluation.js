@@ -61,10 +61,10 @@ function EvaluationsTableRow (options = {}) {
     return `
 
     <tr class="rows">
-        <td>${options.Name}</td>
-        <td>${options.Technology}</td>
-        <td>${options.Level}</td>
-        <td style="text-align: right">Detalii <button>+</button></td>
+        <td class="table-data">${options.Name}</td>
+        <td class="table-data">${options.Technology}</td>
+        <td class="table-data">${options.Level}</td>
+        <td style="text-align: right">Detalii <button class="add-info-button">+</button></td>
     </tr>
     `
 }
@@ -84,7 +84,7 @@ function EvaluationsTableBody (options = {}) {
     <tbody>    
         ${rowsEl}
     </tbody>
-    `
+            `
 }
 
 function EvaluationsTable (options = {}) {
@@ -92,9 +92,9 @@ function EvaluationsTable (options = {}) {
     return `
 
     <section>
-        <table class="candidates_table">
+        <table class="candidates-table">
             ${EvaluationsTableHeader({
-                headings: ['Nume','Tehnologie','Nivel'
+                headings: ['Nume','Tehnologie','Nivel', ' '
             ]
         })}
             ${EvaluationsTableBody({
@@ -102,10 +102,5 @@ function EvaluationsTable (options = {}) {
             })}
         </table>
     </section>
-    `
+            `;
 }
-
-// window.onload = function () {
-//     const appEl = document.querySelector("#app");
-//     appEl.innerHTML = EvaluationsPage();
-// }
