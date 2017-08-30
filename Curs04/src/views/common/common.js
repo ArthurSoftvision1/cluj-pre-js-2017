@@ -35,7 +35,7 @@ const NAV = function (options={}) {
                 </div>
                 <div class="col-md-4" style="padding-top: 4px;">
                     <!--Logout button-->
-                    <a class="logout-button border-bottom" href="#">Logout</a>
+                    <a id="logout-button" class="logout-button border-bottom" href="#">Logout</a>
                 </div>
             </nav>
         </div>
