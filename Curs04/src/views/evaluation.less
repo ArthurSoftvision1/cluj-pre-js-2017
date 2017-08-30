@@ -1,0 +1,266 @@
+//Evaluation less file
+
+//Import colors file
+@import 'colors';
+
+.logout-button {
+    float: right;
+    padding-top: 15px;
+}
+
+.evaluations-link {
+    margin-top: 15px;
+}
+
+.header-links {
+    display: inline-flex;
+}
+
+.container-section {
+    margin-top: 200px;
+}
+
+.table-section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.navigation-bar {
+    border-bottom: 2px solid @darkgrey;
+    padding-bottom: 5px;
+    float: right;
+}
+
+.left_image {
+    height: 290px;
+}
+
+.right_image {
+    float: right;
+}
+
+.right_description {
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.container-fluid {
+    background-color: lightgrey;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+th,
+td {
+    padding-left: 55px;
+    font-size: 20px;
+}
+
+td {
+    border-bottom: 1px solid black;
+}
+
+/*Footer section*/
+.footer-section {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+table tr th {
+    background-color: #01a8f4;
+    color: white;
+    padding: 10px 0;
+}
+
+.logo-image {
+    width: 15%;
+    padding-right: 130px;
+}
+
+.footer-description {
+    font-weight: bold;
+    font-size: 16px;
+    color: @grey;
+}
+
+.container_table {
+    margin-top: 120px;
+}
+
+.evaluation-button {
+    padding-top: 4px;
+}
+
+.new-evaluation {
+    margin-left: 100px;
+}
+
+a.border-bottom:hover {
+    border-bottom: 4px solid @blue;
+    border-bottom-width: 7px;
+}
+
+table {
+    width: 100%;
+}
+
+/*Evaluation html*/
+
+.add-button {
+    background-color: @lightBlue;
+    margin: 8px 0;
+    color: white;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid @lightBlue;
+}
+
+/* Large screens ----------- */
+@media screen and (min-width: 1824px) and (max-width: 1200px) {
+    /* Styles */
+    .add-button {
+        background-color: @lightBlue;
+        margin: 8px 0;
+        color: white;
+        height: 100%;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid @lightBlue;
+    }
+
+    .logout-button {
+        float: right;
+    }
+
+    .border-bottom {
+        font-size: 17px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media screen and (min-width: 1200px) and (max-width: 1024px) {
+    /* Styles */
+    .add-button {
+        background-color: @lightBlue;
+        margin: 8px 0;
+        color: white;
+        height: 100%;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid @lightBlue;
+    }
+
+    .logout-button {
+        float: none !important;
+    }
+
+    .border-bottom {
+        font-size: 16px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media screen and (min-width: 1024px) and (max-width: 768px) {
+    /* Styles */
+    .add-button {
+        background-color: @lightBlue;
+        margin: 8px 0;
+        color: white;
+        height: 100%;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid @lightBlue;
+    }
+
+    .logout-button {
+        float: none !important;
+    }
+
+    .border-bottom {
+        font-size: 14px;
+    }
+}
+
+/*Screen between 699px and 768px*/
+@media screen and (min-width: 768px) and (max-width: 699px) {
+    .logout-button {
+        float: none !important;
+    }
+
+    .add-button {
+        background-color: @lightBlue;
+        margin: 8px 0;
+        color: white;
+        height: 100%;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid @lightBlue;
+    }
+
+    .border-bottom {
+        font-size: 14px;
+    }
+
+    .navigation-bar .col-md-4 {
+        margin-bottom: 30px;
+    }
+}
+
+/*Screen between 529px and 699px*/
+@media screen and (min-width: 699px) and (max-width: 520px) {
+    .logout-button {
+        float: none !important;
+    }
+
+    .add-button {
+        background-color: @lightBlue;
+        margin: 8px 0;
+        color: white;
+        height: 100%;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid @lightBlue;
+    }
+
+    .border-bottom {
+        font-size: 14px;
+    }
+
+    .navigation-bar .col-md-4 {
+        margin-bottom: 30px;
+    }
+}
+
+/*Screen between 320px and 520px*/
+@media screen and (min-width: 520px) and (max-width: 320px) {
+    .logout-button {
+        float: none !important;
+    }
+
+    .border-bottom {
+        font-size: 14px;
+    }
+
+    .navigation-bar .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    td {
+        padding-left: 17px !important;
+        font-size: 10px;
+    }
+
+    th {
+        font-size: 10px;
+    }
+}
+

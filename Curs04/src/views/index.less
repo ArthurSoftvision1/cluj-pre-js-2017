@@ -1,0 +1,254 @@
+/*Feedback HTML*/
+
+//Import colors file
+@import 'colors';
+
+/*Body section*/
+body {
+    overflow-x: hidden;
+}
+
+.left-image {
+    height: 290px;
+}
+
+.calendar-date {
+    width: 35px;
+    margin-top: 18px;
+}
+
+.right-image {
+    float: right;
+}
+
+.right-title {
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.container-fluid {
+    background-color: lightgrey;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-section {
+    font-weight: bold;
+    font-size: 16px;
+    color: @grey;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+}
+
+.feedback-interview-section {
+    text-align: center;
+    padding-top: 125px;
+    position: absolute;
+    width: 100%;
+}
+
+.header-form-section {
+    width: 18%;
+    background-color: @white;
+    height: 340px;
+    margin-left: 429px;
+}
+
+.header-background-section {
+    height: 640px;
+    // background-image: url(img/feedback-banner.jpg);
+    width: 100%;
+}
+
+.interview-text-area {
+    background-color: @lightBlue;
+    color: @white;
+    font-size: 22px;
+    padding: 27px;
+}
+
+.username-area-input,
+.password-area-input {
+    width: 80%;
+    margin-top: 30px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+.login-button {
+    margin-top: 80px;
+    padding: 3px 30px;
+    border: 1px solid @lightBlue;
+    color: @white;
+    background-color: @lightBlue;
+}
+
+.text-description {
+    font-size: 13px;
+    margin-top: 60px;
+}
+
+.text-description-2 {
+    margin-top: 150px;
+}
+
+.right-text-description {
+    width: 50%;
+    float: right;
+    padding-right: 30px;
+}
+
+.feedback-image {
+    float: left !important;
+    width: 200px;
+}
+
+.left-text-description {
+    width: 50%;
+    float: left;
+}
+
+.footer-margin {
+    margin-top: 120px;
+}
+
+.footer-section {
+    text-align: center;
+    background-color: @lightGrey;
+    margin: 0;
+}
+
+.footer-padding {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*Adding style for mobile devices/ tablets / large monitors*/
+
+/*Screen between 320px and 520px*/
+@media screen and (max-width: 520px) and (min-width: 320px) {
+    /* Styles */
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .feedback-image {
+        width: 100%;
+    }
+
+    .header-form-section {
+        width: 87%;
+        margin: 0 40px auto auto;
+    }
+}
+
+/*Screen between 520px and 699px*/
+@media screen and (max-width: 699px) and (min-width: 520px) {
+    /* Styles */
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .feedback-image {
+        float: left !important;
+    }
+
+    .header-form-section {
+        width: 57%;
+        margin: 0 145px auto auto;
+    }
+
+    .right-image {
+        float: left;
+    }
+}
+
+/*Screen between 699px and 768px*/
+@media screen and (max-width: 768px) and (min-width: 699px) {
+    /* Styles */
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .feedback-image {
+        float: left !important;
+    }
+
+    .header-form-section {
+        width: 57%;
+        margin: 0 auto;
+    }
+
+    .right-image {
+        float: left;
+    }
+}
+
+/*Screen between 768px and 992px*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    /* Styles */
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .feedback-image {
+        float: left !important;
+    }
+
+    .header-form-section {
+        width: 45%;
+        margin: 0 230px auto auto;
+    }
+
+    .right-image {
+        float: left;
+    }
+}
+
+/*Screen between 992px and 1200px*/
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    /* Styles */
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .feedback-image {
+        float: left !important;
+    }
+
+    .header-form-section {
+        width: 34%;
+        margin: 0 auto;
+    }
+
+    .right-image {
+        float: left;
+    }
+}
+
+/*Screen between 1200px and 1824px*/
+@media screen and (max-width: 1824px) and (min-width: 1200px) {
+    /* Styles */
+
+    .header-form-section {
+        width: 24%;
+        margin: 0 auto;
+    }
+
+    .right-image {
+        float: right;
+    }
+}

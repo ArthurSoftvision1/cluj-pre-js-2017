@@ -1,4 +1,3 @@
-// Footer component
 const Footer = function () {
     return `
         <!--Footer section-->
@@ -16,7 +15,7 @@ const Footer = function () {
     `;
 }
 
-// Navigation bar component
+
 const NAV = function (options={}) {
     return  `
         <div class="row">

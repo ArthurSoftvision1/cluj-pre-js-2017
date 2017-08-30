@@ -22,15 +22,12 @@ const LoginForm = function (options) {
 
 const SubmitFeedbackSection = function (options) {
     return `
-    <div>
-    <div class="banner-picture">
-        <a href="evaluation.html"><img src="img/feedback-banner.jpg"/> </a>
-    </div>
-    <div>
-        <a href="evaluation.html"><img class="feedback-image" src="./img/new feedback.jpg"/> </a>
+    <div class="col-md-12">
+    <div class="col-md-6">
+        <a href="evaluation.html"><img class="feedback-image" src="img/new%20feedback.jpg"/> </a>
     </div>
     <!--Right text area-->
-    <div class="right-text-description">
+    <div class="col-md-6">
         <h3 class="right-title">Submit new feedback</h3>
         <p class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
             nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus,
@@ -48,9 +45,9 @@ const SubmitFeedbackSection = function (options) {
 
 const SubmitFeedbackResults = function (options) {
     return `
-    <div class="text-description-2">
+    <div class="col-md-12 text-description-2">
     <!--Left text area-->
-    <div class="left-text-description">
+    <div class="col-md-6">
         <h3>View feedback results</h3>
         <p class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
             nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus,
@@ -62,7 +59,7 @@ const SubmitFeedbackResults = function (options) {
             arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
         </p>
     </div>
-    <div>
+    <div class="col-md-6">
         <a class="" href="evaluation.html"><img class="left-image right-image" src="img/results.jpg"/> </a>
     </div>
 </div>  
@@ -72,7 +69,7 @@ const SubmitFeedbackResults = function (options) {
 const LoginHeader = function (options) {
     return `
     <header class="header-background-section">
-    <div>
+    <div class="col-md-12 ">
 
         <!--Feedback Interview Form Section-->
        <form class="feedback-interview-section">
