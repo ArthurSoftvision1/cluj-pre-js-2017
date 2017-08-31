@@ -8,10 +8,11 @@ const evaluationEvents = function() {
 
     newEvaluationButton.addEventListener("click", goToTheNewEvaluationPage) // add click event listener on newEvaluationButton
 
-    const addDetailsButton = document.getElementById("add-button")
+    const addDetailsButtons = document.getElementsByClassName("add-button");
 
-    addDetailsButton.addEventListener("click", goToTheNewEvaluationPage)
+    Array.prototype.forEach.call(addDetailsButtons, bindEvent);
 
-    
-    
+    function bindEvent(el) {
+        el.addEventListener("click", goToTheNewEvaluationPage);
+    }
 }
