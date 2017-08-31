@@ -23,16 +23,17 @@ const newEvaluationEvents = function () {
             event.preventDefault();
 
             const getSelectorAll = document.querySelectorAll("select")
-            // console.log(getSelectorAll)
+      
             getSelectorAll.forEach(function(el) {
-            const nameSelector = el.name
-            const valueSelector = el.value  
+                const nameSelector = el.name
+                const valueSelector = el.value  
 
-            myObj[nameSelector] = valueSelector
-        
+                myObj[nameSelector] = valueSelector
+
             })
 
             const getTextareaAll = document.querySelectorAll("textarea")
+
             getTextareaAll.forEach(function(el) {
                 const nameTextarea = el.name
                 const valueTextarea = el.value
@@ -46,13 +47,13 @@ const newEvaluationEvents = function () {
                 const nameInput = el.name
                 const valueInput = el.value
 
-                if(el.type === 'text' || el.type === 'date') {
+                if(el.type === 'text' || el.type === 'date') { // check the input type
                     myObj[nameInput] = valueInput
-                } else if (el.type === 'radio' && el.checked) {
+                } else if (el.type === 'radio' && el.checked) { // check input type and if the input is checked
                     myObj[nameInput] = valueInput
                 }
             })
-            console.log(myObj)
+            console.log(myObj) // display the Object
 
             if(localStorage.length === 0){ // check of localStorage is empty
                 const storageArr = []
@@ -63,11 +64,16 @@ const newEvaluationEvents = function () {
                 getArrFromStorage.push(myObj)
                 localStorage.setItem('storageKey', JSON.stringify(getArrFromStorage)) // add getArrFromStorage to localStorage
             }
+
+            loadPage('evaluations')
         }
 
         // addEventListener on submit
         submitFormButton.addEventListener("click", submitButton)
 
-      
+
+        
+        
+
     
 }
