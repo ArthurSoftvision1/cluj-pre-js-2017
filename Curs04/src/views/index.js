@@ -1,7 +1,6 @@
 
 window.onload = function(){
     const app = document.querySelector('#app');
-    // call LoginPage function and display LoginPage using innerHTML method
 
     if (sessionStorage.getItem('LoggedIn')) {
         loadPage('evaluations') // show evaluations page if the user is logged
@@ -14,18 +13,18 @@ const loadPage = function(page) {
     
     switch (page) {
         case "login":
-        app.innerHTML = LoginPage();
-        loginEvents()
+        app.innerHTML = LoginPage(); // call LoginPage function
+        loginEvents() // call LoginPage events function
             break;
         case "evaluations":
         app.innerHTML = EvaluationsPage();
-        evaluationEvents()
-        commonEvents()
+        evaluationEvents() // call evaluation Page events function
+        commonEvents() // call commonEvents function which will load the login page
             break;
         case "new-evaluation":
         app.innerHTML = NewEvaluationPage();
-        newEvaluationEvents()
-        commonEvents()
+        newEvaluationEvents() // call newEvaluation events function
+        commonEvents() // call commonEvents function which will load the login page
             break;
     }
 }

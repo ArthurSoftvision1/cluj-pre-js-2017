@@ -26,14 +26,13 @@ const NAV = function (options={}) {
                     <!--Softvision logo-->
                     <a href="new-evaluation.html"><img class="logo-image" src="img/logo-v2.png"/> </a>
                 </div>
-                <div class="col-md-4 evaluation-button" style="padding-top: 4px;">
+                <div class="col-md-4">
                     <!--Evaluation navbar button-->
                     <a id="evaluation-page" class="border-bottom" href="#">Evaluations</a>
 
                     <!--New Evaluation button-->
                     <a id="new-evaluation-page" class="new-evaluation border-bottom" href="#" style="margin-left: 100px;">New Evaluation</a>
-                </div>
-                <div class="col-md-4" style="padding-top: 4px;">
+
                     <!--Logout button-->
                     <a id="logout-button" class="logout-button border-bottom" href="#">Logout</a>
                 </div>

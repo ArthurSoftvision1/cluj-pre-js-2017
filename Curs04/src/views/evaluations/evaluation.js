@@ -1,33 +1,11 @@
 function EvaluationsPage (options = {}) {
 
     const headings = [
-        'Nume','Tehnologie','Nivel'
+        'Nume','Tehnologie','Nivel', 'Details'
     ]
 
-    const rows = [
-
-        {
-            Name: "Popescu Adrian",
-            Technology: "Javascript",
-            Level: "Mid 2"
-        },
-        {
-            Name: "Dragan Roxana",
-            Technology: "PHP",
-            Level: "Mid 1"
-        },
-        {
-            Name: "Florescu Mihai",
-            Technology: "Javascript",
-            Level: "Junior 3"
-        },
-        {
-            Name: "Gheorghe Andrei",
-            Technology: "Ruby",
-            Level: "Senior 1"
-        }
-    ]
-
+    const rows = JSON.parse(localStorage.getItem("storageKey"))
+    
     return `
 
         ${NAV()}
@@ -61,10 +39,10 @@ function EvaluationsTableRow (options = {}) {
     return `
 
     <tr class="rows">
-        <td class="table-data">${options.Name}</td>
-        <td class="table-data">${options.Technology}</td>
-        <td class="table-data">${options.Level}</td>
-        <td style="text-align: right">Detalii <button class="add-info-button">+</button></td>
+        <td class="table-data">${options.candidate}</td>
+        <td class="table-data">${options.date}</td>
+        <td class="table-data">${options.circle}</td>
+        <td style="text-align: right">Detalii<button class="add-button">+</button></td>
     </tr>
     `
 }

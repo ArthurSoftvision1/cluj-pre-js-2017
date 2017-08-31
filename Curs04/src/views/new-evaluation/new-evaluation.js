@@ -349,7 +349,7 @@ const CandidateDetailsForm = function (options) {
 
 
 const TechnicalLevelHeader = function (options){
-    return `<div class="row">
+    return `<div class="row_title">
     <h2 class="description_section">${options}</h2>
     </div>`
 }
