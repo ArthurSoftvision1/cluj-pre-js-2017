@@ -1,7 +1,4 @@
-/*Feedback HTML*/
-
-//Import colors file
-@import 'colors';
+// Index less file
 
 /*Body section*/
 body {
@@ -18,7 +15,9 @@ body {
 }
 
 .right-image {
-    float: right;
+    margin-bottom: 130px;
+    margin-left: 300px;
+    margin-top: 200px;
 }
 
 .right-title {
@@ -27,27 +26,18 @@ body {
 }
 
 .container-fluid {
-    background-color: lightgrey;
-}
-
-.feedback-image {
-    width: 70%;
-}
-
-.banner-picture {
-    width: 100%;
+    background-color: @lightGrey;
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: @black;
     font-weight: 700;
     font-size: 24px;
 }
 
 .footer-section {
-    padding: 25px 0 19px;
     font-weight: bold;
     font-size: 16px;
     color: @grey;
@@ -70,7 +60,6 @@ a {
 
 .header-background-section {
     height: 640px;
-    // background-image: url(img/feedback-banner.jpg);
     width: 100%;
 }
 
@@ -99,12 +88,32 @@ a {
 }
 
 .text-description {
-    font-size: 13px;
+    font-size: 18px;
     margin-top: 60px;
 }
 
 .text-description-2 {
     margin-top: 150px;
+}
+
+.right-text-description {
+    width: 46%;
+    float: right;
+    padding-right: 115px;
+}
+
+.feedback-image {
+    float: left !important;
+    width: 300px;
+    height: 270px;
+    margin-left: 285px;
+}
+
+.left-text-description {
+    width: 44%;
+    margin-top: 200px;
+    padding-left: 150px;
+    float: left;
 }
 
 .footer-margin {
@@ -138,7 +147,7 @@ a {
 
     .header-form-section {
         width: 87%;
-        margin: 0 40px auto auto;
+        margin: 0 40px auto;
     }
 }
 

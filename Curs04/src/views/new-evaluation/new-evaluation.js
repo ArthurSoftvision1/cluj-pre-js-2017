@@ -349,7 +349,7 @@ const CandidateDetailsForm = function (options) {
 
 
 const TechnicalLevelHeader = function (options){
-    return `<div class="row">
+    return `<div class="row_title">
     <h2 class="description_section">${options}</h2>
     </div>`
 }
@@ -358,7 +358,7 @@ const  TechnicalLevelNav = function (options) {
     const result = options.map(function (element){
         return `
         <div class="col-md-3 bullets_menu">
-            <h3>${element}</h3>
+            <h3 class="header-title">${element}</h3>
         </div>`
     })
     return result.join('')

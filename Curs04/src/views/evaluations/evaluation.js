@@ -1,33 +1,11 @@
 function EvaluationsPage (options = {}) {
 
     const headings = [
-        'Nume','Tehnologie','Nivel'
+        'Nume','Tehnologie','Nivel', 'Details'
     ]
 
-    const rows = [
-
-        {
-            Name: "Popescu Adrian",
-            Technology: "Javascript",
-            Level: "Mid 2"
-        },
-        {
-            Name: "Dragan Roxana",
-            Technology: "PHP",
-            Level: "Mid 1"
-        },
-        {
-            Name: "Florescu Mihai",
-            Technology: "Javascript",
-            Level: "Junior 3"
-        },
-        {
-            Name: "Gheorghe Andrei",
-            Technology: "Ruby",
-            Level: "Senior 1"
-        }
-    ]
-
+    const rows = JSON.parse(localStorage.getItem("storageKey"))
+    
     return `
 
         ${NAV()}
@@ -61,10 +39,10 @@ function EvaluationsTableRow (options = {}) {
     return `
 
     <tr class="rows">
-        <td>${options.Name}</td>
-        <td>${options.Technology}</td>
-        <td>${options.Level}</td>
-        <td style="text-align: right">Detalii <button>+</button></td>
+        <td class="table-data">${options.candidate}</td>
+        <td class="table-data">${options.date}</td>
+        <td class="table-data">${options.circle}</td>
+        <td style="text-align: right">Detalii<button class="add-button">+</button></td>
     </tr>
     `
 }
@@ -84,7 +62,7 @@ function EvaluationsTableBody (options = {}) {
     <tbody>    
         ${rowsEl}
     </tbody>
-    `
+            `
 }
 
 function EvaluationsTable (options = {}) {
@@ -92,9 +70,9 @@ function EvaluationsTable (options = {}) {
     return `
 
     <section>
-        <table class="candidates_table">
+        <table class="candidates-table">
             ${EvaluationsTableHeader({
-                headings: ['Nume','Tehnologie','Nivel'
+                headings: ['Nume','Tehnologie','Nivel', ' '
             ]
         })}
             ${EvaluationsTableBody({
@@ -102,10 +80,5 @@ function EvaluationsTable (options = {}) {
             })}
         </table>
     </section>
-    `
+            `;
 }
-
-// window.onload = function () {
-//     const appEl = document.querySelector("#app");
-//     appEl.innerHTML = EvaluationsPage();
-// }

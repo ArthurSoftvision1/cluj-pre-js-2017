@@ -1,8 +1,5 @@
 //New evaluation less file
 
-//Import colors file
-@import 'colors';
-
 ul {
     list-style-type: none;
 }
@@ -11,15 +8,20 @@ li.bullets {
     padding: 10px;
 }
 
+.row_first {
+    margin: 0;
+    width: 89%;
+}
+
 .submit-button {
     float: right;
     margin-top: 30px;
     padding: 15px 40px;
     margin-right: 100px;
-    border: 2px solid #03a9f4;
-    color: white;
+    border: 2px solid @lightBlue;
+    color: @white;
     font-size: 16px;
-    background-color: #03a9f4;
+    background-color: @lightBlue;
     font-weight: bold;
     border-radius: 4px;
 }
@@ -64,22 +66,13 @@ li.bullets {
     display: flex;
 }
 
-h3 {
+.header-title {
     color: @white;
     padding-left: 18px;
 }
 
 .container {
     margin-top: 100px;
-}
-
-.row {
-    width: 89%;
-    margin: 0 auto;
-}
-
-.description-section {
-    color: @lightBlue;
 }
 
 .row_section {
@@ -119,6 +112,7 @@ textarea {
     margin-top: 30px;
     padding: 15px 40px;
     margin-right: 100px;
+    margin-bottom: 130px;
 }
 
 .container-fluid {
@@ -145,12 +139,8 @@ ul {
 }
 
 .row {
-    width: 89%;
+    width: 100%;
     margin: 0 auto;
-}
-
-.description-section {
-    color: @lightBlue;
 }
 
 .level_evaluation {
@@ -186,6 +176,7 @@ a.border-bottom:hover {
 
 .description-section {
     margin-left: 300px;
+    color: @lightBlue;
 }
 
 fieldset.field-section {
@@ -194,7 +185,7 @@ fieldset.field-section {
 
 legend {
     text-align: left;
-    color: #03a9f4;
+    color: @lightBlue;
 }
 
 .input-circle[type='radio'] {
@@ -204,18 +195,18 @@ legend {
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #d1d3d1;
+    background-color: @grey;
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid white;
+    border: 2px solid @white;
 }
 
 .footer-area {
     padding: 25px 350px 20px 0;
     font-weight: bold;
     font-size: 16px;
-    color: gray;
+    color: @grey;
     text-align: right;
     margin-top: 120px;
     margin-bottom: 0;
@@ -235,7 +226,7 @@ fieldset.field-section {
 
 legend {
     text-align: left;
-    color: #03a9f4;
+    color: @lightBlue;
 }
 
 .input-circle[type='radio'] {
@@ -245,18 +236,18 @@ legend {
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #d1d3d1;
+    background-color: @grey;
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid white;
+    border: 2px solid @white;
 }
 
 .footer-area {
     padding: 25px 350px 20px 0;
     font-weight: bold;
     font-size: 16px;
-    color: gray;
+    color: @grey;
     text-align: right;
     margin-top: 120px;
     margin-bottom: 0;
@@ -280,7 +271,7 @@ fieldset legend h2 {
     padding-left: 17px;
 }
 
-.col-md-3.bullets_menu {
+.bullets_menu {
     margin: 0 auto 10px 10px;
 }
 
@@ -311,7 +302,7 @@ fieldset legend h2 {
     padding-left: 17px;
 }
 
-.col-md-3.bullets_menu {
+.bullets_menu {
     margin: 0 auto 10px 10px;
 }
 
@@ -325,9 +316,7 @@ header form {
 }
 
 table tr th {
-    background-color: #03a9f4;
-    color: white;
+    background-color: @lightBlue;
+    color: @white;
     padding: 10px 0;
 }
-
-
