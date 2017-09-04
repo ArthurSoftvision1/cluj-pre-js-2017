@@ -17,6 +17,8 @@ function EvaluationsPage (options = {}) {
          `;
 }
 
+// data-id = "${myObject.id}"
+
 function EvaluationsTableHeader(options) {
 
     const headings = [];
@@ -42,7 +44,7 @@ function EvaluationsTableRow (options = {}) {
         <td class="table-data">${options.candidate}</td>
         <td class="table-data">${options.date}</td>
         <td class="table-data">${options.circle}</td>
-        <td style="text-align: right">Detalii<button class="add-button">+</button></td>
+        <td style="text-align: right">Detalii<button class="add-button" data-Candidate="${options.id}">+</button></td>
     </tr>
     `
 }

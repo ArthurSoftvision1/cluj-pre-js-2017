@@ -1,7 +1,7 @@
 const evaluationEvents = function() {
 
-    const goToTheNewEvaluationPage = function() {
-        loadPage('new-evaluation') // show new-evaluation page
+    const goToTheNewEvaluationPage = function(event) {
+        loadPage('new-evaluation', event.data.candidate) // show new-evaluation page
     }
    
     const newEvaluationButton = document.getElementById("new-evaluation-page") // get newEvaluationButton by his ID
@@ -13,6 +13,6 @@ const evaluationEvents = function() {
     Array.prototype.forEach.call(addDetailsButtons, bindEvent);
 
     function bindEvent(el) {
-        el.addEventListener("click", goToTheNewEvaluationPage);
+        el.addEventListener("click", goToTheNewEvaluationPage(event));
     }
 }

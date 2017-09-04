@@ -55,6 +55,8 @@ const newEvaluationEvents = function () {
             })
             console.log(myObj) // display the Object
 
+            myObj.id = (myObj.candidate + myObj.date + (new Date()).getTime()).replace(/\s/g,'');
+
             if(localStorage.length === 0){ // check of localStorage is empty
                 const storageArr = []
                 storageArr.push(myObj)
