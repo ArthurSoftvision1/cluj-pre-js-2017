@@ -1,7 +1,7 @@
 const evaluationEvents = function() {
 
-    const goToTheNewEvaluationPage = function(event) {
-        loadPage('new-evaluation', event.data.candidate) // show new-evaluation page
+    const goToTheNewEvaluationPage = function() {
+        loadPage('new-evaluation', event.target.dataset.candidate) // show new-evaluation page
     }
    
     const newEvaluationButton = document.getElementById("new-evaluation-page") // get newEvaluationButton by his ID

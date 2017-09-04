@@ -22,7 +22,7 @@ const loadPage = function(page, id = '') {
 
                 const getArrFromStorage = JSON.parse(localStorage.getItem('storageKey')) // transform a String in Array
 
-                    const verifyEvaluation
+                    let verifyEvaluation
                     getArrFromStorage.forEach(function(evaluation) {
                         if (evaluation.id === id) {
                             verifyEvaluation = evaluation
@@ -50,11 +50,14 @@ const loadPage = function(page, id = '') {
                         textAr.value = verifyEvaluation[textAr.name]
                         textAr.setAttribute('selected', true)
                     }) 
+
+                    
                 } 
+                
         }
 
         app.innerHTML = NewEvaluationPage();
         newEvaluationEvents() // call newEvaluation events function
         commonEvents() // call commonEvents function which will load the login page
-            break;
+            
 }
