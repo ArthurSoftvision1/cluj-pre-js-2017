@@ -139,7 +139,7 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
     }
    
     return `
-        ${interviewApp.NAV(optionParam.navigationLinks)},
+        ${interviewApp.NAV(optionParam.navLinks)},
         ${CandidateDetailsForm(optionParam.detailsForm)},
         ${TechnicalLevelPicker(optionParam.levelContent)},
         ${TextAreaBody(optionParam.areaContent)},

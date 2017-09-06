@@ -1,6 +1,7 @@
 interviewApp.evaluationEvents = function() {
 
-    const goToTheNewEvaluationPage = function() {
+    const goToTheNewEvaluationPage = function(event) {
+        event.preventDefault();
         interviewApp.newEvaluationModule.init() // show new-evaluation page
     }
    

@@ -1,19 +1,12 @@
 
-interviewApp = {}
+interviewApp = {}; // interviewApp object
 
 window.onload = function () {
     const app = document.querySelector('#app');
 
     if (sessionStorage.getItem('LoggedIn')) {
-        interviewApp.evaluationsModule.init(); // show evaluations page if the user is logged
+        interviewApp.evaluationsModule.init(); // initialize the evaluationsModule
     } else {
-        interviewApp.loginModule.init(); // if is not logged go to login page
+        interviewApp.loginModule.init(); // initialize the loginModule
     }
 };
-
-
-
-
-
-
-

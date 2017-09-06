@@ -28,13 +28,13 @@ interviewApp.NAV = function (options={}) {
                 </div>
                 <div class="col-md-4">
                     <!--Evaluation navbar button-->
-                    <a id="evaluation-page" class="border-bottom" href="#">Evaluations</a>
+                    <a id="evaluation-page" class="border-bottom" href="">Evaluations</a>
 
                     <!--New Evaluation button-->
-                    <a id="new-evaluation-page" class="new-evaluation border-bottom" href="#" style="margin-left: 100px;">New Evaluation</a>
+                    <a id="new-evaluation-page" class="new-evaluation border-bottom" href="" style="margin-left: 100px;">New Evaluation</a>
 
                     <!--Logout button-->
-                    <a id="logout-button" class="logout-button border-bottom" href="#">Logout</a>
+                    <a id="logout-button" class="logout-button border-bottom" href="">Logout</a>
                 </div>
             </nav>
         </div>
