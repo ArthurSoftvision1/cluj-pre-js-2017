@@ -1,5 +1,5 @@
 interviewApp.newEvaluationEvents = function () {
-
+    
         const myObj = {}
     
     const goToTheEvaluationPage = function(event) {
@@ -53,18 +53,22 @@ interviewApp.newEvaluationEvents = function () {
                     myObj[nameInput] = valueInput
                 }
             })
-            console.log(myObj) // display the Object
 
             if(localStorage.length === 0){ // check of localStorage is empty
                 const storageArr = []
                 storageArr.push(myObj)
                 localStorage.setItem('storageKey', JSON.stringify(storageArr)) // transform Array in String
             } else {
-                const getArrFromStorage = JSON.parse(localStorage.getItem('storageKey')) // transform a String in Array
-                getArrFromStorage.push(myObj)
-                localStorage.setItem('storageKey', JSON.stringify(getArrFromStorage)) // add getArrFromStorage to localStorage
+                let response;
+                try{
+                    const getArrFromStorage = JSON.parse(localStorage.getItem('storageKey')) // transform a String in Array
+                    getArrFromStorage.push(myObj)
+                    localStorage.setItem('storageKey', JSON.stringify(getArrFromStorage)) // add getArrFromStorage to localStorage
+                } catch (e) {
+                    console.error('Something went wrong', e)
+                    response = []
+                }              
             }
-
             interviewApp.evaluationsModule.init()
         }
 
