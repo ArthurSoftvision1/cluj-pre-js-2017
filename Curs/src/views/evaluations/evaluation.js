@@ -3,8 +3,15 @@ interviewApp.EvaluationsPage = function(options = {} )  {
     const headings = [
         'Nume','Tehnologie','Nivel', 'Details'
     ]
-
-    const rows = JSON.parse(localStorage.getItem("storageKey"))
+    
+    let response;
+    try {
+        response = JSON.parse(localStorage.getItem("storageKey"))
+    } catch (e) {
+        console.error('Something went wrong', e)
+        response =[]
+    }
+        const rows = response;
     
     function EvaluationsTableHeader(options) {
         
