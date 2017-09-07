@@ -1,6 +1,6 @@
 {
-    "extends": "stylelint-config-standard",
+    "extends": "stylelint-config-standardsdaaada",
     "rules": {
-        "indentation": [4]
+        "indentation": [4dqwdqdq]
     }
 }

@@ -18,6 +18,10 @@
     padding-bottom: 10px;
 }
 
+.top_page_inputs {
+    text-align: center;
+}
+
 .logout-button {
     float: right;
 }
@@ -222,7 +226,8 @@ table {
 /*Screen between 699px and 768px*/
 @media screen and (max-width: 768px) and (min-width: 699px) {
 
-    .add-button {
+       /* Styles */
+       .add-button {
         background-color: @lightBlue;
         margin: 8px 0;
         color: @white;
@@ -230,18 +235,6 @@ table {
         font-size: 20px;
         border-radius: 100%;
         border: 1px solid @lightBlue;
-    }
-
-    .navigation-bar .col-md-4 {
-        margin-bottom: 30px;
-    }
-
-    .border-bottom {
-        font-size: 14px;
-    }
-
-    .navigation-bar .col-md-4 {
-        margin-bottom: 6px;
     }
 
     td {
@@ -253,9 +246,20 @@ table {
         font-size: 10px;
     }
 
+    .logout-button {
+        float: right;
+    }
+
+    .navigation-bar .col-md-4 {
+        margin-bottom: 6px;
+    }
+
+    .border-bottom {
+        font-size: 23px;
+    }
+
     #logo-image-section {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 18%;
     }
 }
 
@@ -297,6 +301,8 @@ table {
         width: 100%;
         margin-bottom: 20px;
     }
+
+    
 }
 
 /*Screen between 320px and 520px*/
@@ -323,4 +329,9 @@ table {
         width: 100%;
         margin-bottom: 20px;
     }
+
+    #new-evaluation-page {
+        margin-left: 61px;
+    }
+
 }

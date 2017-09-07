@@ -1,6 +1,9 @@
 interviewApp.commonEvents = function() {
 
-    const goToTheLoginPage = function() {
+    const goToTheLoginPage = function(event) {
+        event.preventDefault();
+
+
         interviewApp.loginModule.init() // show loginPage
         sessionStorage.removeItem("LoggedIn") // remove the item from sessionStorage
     }
