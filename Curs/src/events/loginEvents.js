@@ -51,15 +51,16 @@ interviewApp.loginEvents = function () {
 
         loginPagePromise.then((loginObject) => {
                 
-                // check of username input and password input contain value 1
-                if (usernameValue === loginObject.username && passwordValue === loginObject.password) {
-                    // call goToEvaluationPage function which will render the page
-                    interviewApp.evaluationsModule.init() // go to evaluations page
-                    sessionStorage.setItem('LoggedIn', 'true')
-                } else {
-                    // if the condition is not met, drop this message
-                    displayAlert("Something went wrong");
-                }
+            // check of username input and password input contain value 1
+            if (usernameValue === loginObject.username && passwordValue === loginObject.password) {
+                // call goToEvaluationPage function which will render the page
+                interviewApp.evaluationsModule.init() // go to evaluations page
+                sessionStorage.setItem('LoggedIn', 'true')
+            } else {
+                // if the condition is not met, drop this message
+                displayAlert("Something went wrong");
+            }
+
         }).catch((error) => {
             displayAlert(error);
         })
@@ -67,6 +68,4 @@ interviewApp.loginEvents = function () {
     }
         // add "submit" event listener on login button
         loginFormSection.addEventListener("submit", submitLogin)
-
-
 }
