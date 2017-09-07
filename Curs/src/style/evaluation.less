@@ -156,7 +156,7 @@ table {
 }
 
 /* Desktops and laptops ----------- */
-@media screen and (min-width: 1200px) and (max-width: 1024px) {
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
     /* Styles */
     .add-button {
         background-color: @lightBlue;
@@ -169,16 +169,28 @@ table {
     }
 
     .logout-button {
-        float: none !important;
+        float: right;
     }
 
     .border-bottom {
-        font-size: 16px;
+        font-size: 23px;
+    }
+
+    .navigation-bar .col-md-4 {
+        margin-bottom: 6px;
+    }
+
+    .border-bottom {
+        font-size: 23px;
+    }
+
+    #logo-image-section {
+        width: 18%;
     }
 }
 
 /* Desktops and laptops ----------- */
-@media screen and (min-width: 1024px) and (max-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
     /* Styles */
     .add-button {
         background-color: @lightBlue;
@@ -191,19 +203,24 @@ table {
     }
 
     .logout-button {
-        float: none !important;
+        float: right;
     }
 
     .border-bottom {
-        font-size: 14px;
+        font-size: 23px;
+    }
+
+    .navigation-bar .col-md-4 {
+        margin-bottom: 6px;
+    }
+
+    #logo-image-section {
+        width: 18%;
     }
 }
 
 /*Screen between 699px and 768px*/
-@media screen and (min-width: 768px) and (max-width: 699px) {
-    .logout-button {
-        float: none !important;
-    }
+@media screen and (max-width: 768px) and (min-width: 699px) {
 
     .add-button {
         background-color: @lightBlue;
@@ -215,29 +232,8 @@ table {
         border: 1px solid @lightBlue;
     }
 
-    .border-bottom {
-        font-size: 14px;
-    }
-
     .navigation-bar .col-md-4 {
         margin-bottom: 30px;
-    }
-}
-
-/*Screen between 529px and 699px*/
-@media screen and (min-width: 699px) and (max-width: 520px) {
-    .logout-button {
-        float: none !important;
-    }
-
-    .add-button {
-        background-color: @lightBlue;
-        margin: 8px 0;
-        color: @white;
-        height: 100%;
-        font-size: 20px;
-        border-radius: 100%;
-        border: 1px solid @lightBlue;
     }
 
     .border-bottom {
@@ -245,22 +241,7 @@ table {
     }
 
     .navigation-bar .col-md-4 {
-        margin-bottom: 30px;
-    }
-}
-
-/*Screen between 320px and 520px*/
-@media screen and (min-width: 520px) and (max-width: 320px) {
-    .logout-button {
-        float: none !important;
-    }
-
-    .border-bottom {
-        font-size: 14px;
-    }
-
-    .navigation-bar .col-md-4 {
-        margin-bottom: 30px;
+        margin-bottom: 6px;
     }
 
     td {
@@ -270,5 +251,76 @@ table {
 
     th {
         font-size: 10px;
+    }
+
+    #logo-image-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*Screen between 529px and 699px*/
+@media screen and (max-width: 699px) and (min-width: 520px) {
+
+    .add-button {
+        background-color: @lightBlue;
+        margin: 8px 0;
+        color: @white;
+        height: 100%;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid @lightBlue;
+    }
+
+    .navigation-bar .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    .border-bottom {
+        font-size: 14px;
+    }
+
+    .navigation-bar .col-md-4 {
+        margin-bottom: 6px;
+    }
+
+    td {
+        padding-left: 17px !important;
+        font-size: 10px;
+    }
+
+    th {
+        font-size: 10px;
+    }
+
+    #logo-image-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*Screen between 320px and 520px*/
+@media screen and (min-width: 320px) and (max-width: 520px){
+
+    .border-bottom {
+        font-size: 14px;
+    }
+
+    .navigation-bar .col-md-4 {
+        margin-bottom: 6px;
+    }
+
+    td {
+        padding-left: 17px !important;
+        font-size: 10px;
+    }
+
+    th {
+        font-size: 10px;
+    }
+
+    #logo-image-section {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
