@@ -27,11 +27,30 @@ interviewApp.loginEvents = function () {
             }
         }
 
-        const xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) { // check the state and the status 
+        var loginPagePromise = new Promise(function(resolve, reject) {
+            const xhttpLoginPage = new XMLHttpRequest();
+            xhttpLoginPage.onreadystatechange = function() {
+                if (this.readyState === 4) {
+                    if (this.status < 400) {
+                        let loginObject
+                        try {
+                            loginObject = JSON.parse(xhttpLoginPage.responseText);
+                        } catch (e) {
+                            reject('Cannot access API')
+                        }
+                        resolve(loginObject);
+                    } else {
+                        reject('Cannot access API')
+                    }
+                }
+            };
+            xhttpLoginPage.open('GET', 'src/Data/xhrLogin.json', true)
+            xhttpLoginPage.send()
+    
+        });
+
+        loginPagePromise.then((loginObject) => {
                 
-                const loginObject = JSON.parse(xhttp.responseText);
                 // check of username input and password input contain value 1
                 if (usernameValue === loginObject.username && passwordValue === loginObject.password) {
                     // call goToEvaluationPage function which will render the page
@@ -41,13 +60,13 @@ interviewApp.loginEvents = function () {
                     // if the condition is not met, drop this message
                     displayAlert("Something went wrong");
                 }
-            }
-        };
-
-        xhttp.open('GET', 'src/Data/xhrLogin.json', true)
-        xhttp.send()
+        }).catch((error) => {
+            displayAlert(error);
+        })
 
     }
-    // add "submit" event listener on login button
-    loginFormSection.addEventListener("submit", submitLogin)
+        // add "submit" event listener on login button
+        loginFormSection.addEventListener("submit", submitLogin)
+
+
 }
