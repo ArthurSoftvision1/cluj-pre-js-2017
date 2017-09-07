@@ -24,14 +24,14 @@ interviewApp.NAV = function (options={}) {
             <nav class="col-md-12 navigation-bar">
                 <div class="col-md-4">
                     <!--Softvision logo-->
-                    <a href="new-evaluation.html"><img class="logo-image" src="src/views/img/logo-v2.png"/> </a>
+                    <a href="new-evaluation.html"><img id="logo-image-section" class="logo-image" src="src/views/img/logo-v2.png"/> </a>
                 </div>
                 <div class="col-md-4">
                     <!--Evaluation navbar button-->
                     <a id="evaluation-page" class="border-bottom" href="">Evaluations</a>
 
                     <!--New Evaluation button-->
-                    <a id="new-evaluation-page" class="new-evaluation border-bottom" href="" style="margin-left: 100px;">New Evaluation</a>
+                    <a id="new-evaluation-page" class="new-evaluation border-bottom" href="">New Evaluation</a>
 
                     <!--Logout button-->
                     <a id="logout-button" class="logout-button border-bottom" href="">Logout</a>
