@@ -46,7 +46,6 @@ interviewApp.loginEvents = function () {
             };
             xhttpLoginPage.open('GET', 'src/Data/xhrLogin.json', true)
             xhttpLoginPage.send()
-    
         });
 
         loginPagePromise.then((loginObject) => {

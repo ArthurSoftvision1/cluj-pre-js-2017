@@ -14,6 +14,4 @@ interviewApp.evaluationEvents = function() {
         el.addEventListener("click", goToTheNewEvaluationPage);
     }
     Array.prototype.forEach.call(addDetailsButtons, bindEvent);
-
-    
 }

@@ -30,7 +30,6 @@ interviewApp.newEvaluationModule = {
         }).catch((error) => {
             alert(error);
         });
-
     }
 }
 
