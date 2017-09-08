@@ -41,7 +41,7 @@ interviewApp.LoginPage = function () {
 
     const SubmitFeedbackResults = function (options) {
         return `
-        <div class="text-description-2">
+        <div class="text-description-details">
         <!--Left text area-->
         <div class="left-text-description">
             <h3>View feedback results</h3>
