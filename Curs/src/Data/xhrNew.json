@@ -19,28 +19,28 @@
                         "2",
                         "3"
                     ],
-                    "selectName": "access",
-                    "labelText": "Access modifiers"
-                },
-                {
-                    "legendSelectorContent": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
-                    "selectName": "polymorphism",
-                    "labelText": "Polymorphism"
-                },
-                {
-                    "legendSelectorContent": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
                     "selectName": "exception",
                     "labelText": "Exception handling"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "version",
+                    "labelText": "Version Control"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "access",
+                    "labelText": "Access modifiers"
                 },
                 {
                     "legendSelectorContent": [
@@ -59,8 +59,8 @@
                         "2",
                         "3"
                     ],
-                    "selectName": "regex",
-                    "labelText": "Regex"
+                    "selectName": "access",
+                    "labelText": "Access modifiers"
                 },
                 {
                     "legendSelectorContent": [
@@ -69,8 +69,19 @@
                         "2",
                         "3"
                     ],
-                    "selectName": "version",
-                    "labelText": "Version Control"
+                    "selectName": "polymorphism",
+                    "labelText": "Polymorphism"
+                },
+             
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "regex",
+                    "labelText": "REGEX"
                 },
                 {
                     "legendSelectorContent": [
@@ -169,16 +180,6 @@
                         "2",
                         "3"
                     ],
-                    "selectName": "syntax",
-                    "labelText": "Syntax rules"
-                },
-                {
-                    "legendSelectorContent": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
                     "selectName": "tags",
                     "labelText": "Tags"
                 },
@@ -191,6 +192,16 @@
                     ],
                     "selectName": "attributes",
                     "labelText": "Attributes"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "syntax",
+                    "labelText": "Syntax rules"
                 },
                 {
                     "legendSelectorContent": [
@@ -224,8 +235,8 @@
                         "2",
                         "3"
                     ],
-                    "selectName": "selectors",
-                    "labelText": "Selectors"
+                    "selectName": "styling",
+                    "labelText": "Styling"
                 },
                 {
                     "legendSelectorContent": [
@@ -244,8 +255,8 @@
                         "2",
                         "3"
                     ],
-                    "selectName": "styling",
-                    "labelText": "Styling"
+                    "selectName": "selectors",
+                    "labelText": "Selectors"
                 },
                 {
                     "legendSelectorContent": [
