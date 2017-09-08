@@ -94,7 +94,7 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
     const legendBoxes = function (options = {}){
         const result = options.map(function(elements){
             return `
-            <li>
+            <li class="selector-content">
             <label>${elements.labelText}</label> 
                 <select class="select-option" name="${elements.selectName}">
                     <option selected disabled>Evaluation</option>

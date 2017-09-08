@@ -234,16 +234,6 @@
                         "2",
                         "3"
                     ],
-                    "selectName": "access",
-                    "labelText": "Access modifiers"
-                },
-                {
-                    "legendSelectorContent": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
                     "selectName": "box",
                     "labelText": "Box modelling"
                 },

@@ -47,6 +47,10 @@ ul {
     border: none;
 }
 
+.selector-content {
+    width: 29%;
+}
+
 .logo-section {
     border-bottom: 2px solid @darkgrey;
     padding-bottom: 15px;
@@ -123,18 +127,8 @@ ul {
 }
 
 .language-form {
-    text-align: center;
-}
-
-.field-section {
-    display: inline;
-    width: 61%;
-}
-
-ul {
-    display: inline-flex;
-    text-align: right;
-    width: 97%;
+    width: 1183px;
+    margin: 0 auto;
 }
 
 .container-technical-evaluation {
@@ -157,13 +151,6 @@ ul {
     margin-left: 150px;
 }
 
-.top-page-inputs {
-    display: block;
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
 .col-md-3 {
     display: inline-block;
 }
@@ -174,16 +161,13 @@ ul {
 }
 
 .language-form {
-    margin-top: 70px;
+    width: 62%;
+    margin: 0 auto;
 }
 
 .description-section {
     margin-left: 300px;
     color: @lightBlue;
-}
-
-fieldset.field-section {
-    text-align: center;
 }
 
 .legend-title {
@@ -216,7 +200,8 @@ fieldset.field-section {
 }
 
 .language-form {
-    margin-top: 70px;
+    width: 62%;
+    margin: 0 auto;
 }
 
 .description-section {
@@ -224,7 +209,7 @@ fieldset.field-section {
 }
 
 .field-section {
-    text-align: center;
+    margin-top: 60px;
 }
 
 .input-circle[type='radio'] {
@@ -255,11 +240,6 @@ fieldset ul li {
     margin: 0 auto 10px;
 }
 
-ul li label {
-    padding: 25px;
-    font-size: 18px;
-}
-
 .legend-header-title {
     padding-right: 17px;
     padding-left: 17px;
@@ -270,7 +250,10 @@ ul li label {
 }
 
 .select-option {
-    margin-top: 10px;
+    margin-left: 39px;
+    float: right;
+    height: 28px;
+    width: 38%;
 }
 
 /*Header form*/
@@ -279,12 +262,14 @@ header form {
 }
 
 .technical-list li {
-    margin: 0 auto 10px;
+    display: inline-block;
+    padding-right: 18px;
+    padding-left: 18px;
 }
 
 ul li label {
-    padding: 25px;
-    font-size: 18px;
+    font-size: 17px;
+    float:left;
 }
 
 .legend-header-title {
@@ -293,11 +278,7 @@ ul li label {
 }
 
 .bullets-menu {
-    margin: 0 auto 10px 10px;
-}
-
-.select-option {
-    margin-top: 10px;
+    margin: 10px auto 10px 10px;
 }
 
 /*Header form*/
@@ -314,6 +295,10 @@ table tr th {
 /*Screen between 320px and 520px*/
 @media screen and (max-width: 520px) and (min-width: 320px) {
     /* Styles */
+
+    .top-page-inputs {
+        text-align: center;
+    }
 
     .level-evaluation {
         background-color: @lightBlue;
@@ -377,6 +362,10 @@ table tr th {
 @media screen and (max-width: 699px) and (min-width: 520px) { 
     /* Styles */
 
+    .top-page-inputs {
+        text-align: center;
+    }
+
     .level-evaluation {
         background-color: @lightBlue;
         margin: auto;
@@ -438,6 +427,10 @@ table tr th {
 /*Screen between 699px and 768px*/
 @media screen and (max-width: 768px) and (min-width: 699px) {
     /* Styles */
+
+    .top-page-inputs {
+        text-align: center;
+    }
 
     .level-evaluation {
         background-color: @lightBlue;
@@ -501,6 +494,10 @@ table tr th {
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     /* Styles */
 
+    .top-page-inputs {
+        text-align: center;
+    }
+
     .level-evaluation {
         background-color: @lightBlue;
         margin: auto;
@@ -562,6 +559,10 @@ table tr th {
 /* Desktops and laptops ----------- */
 @media screen and (max-width: 1200px) and (min-width: 1024px) {
     /* Styles */
+
+    .top-page-inputs {
+        text-align: center;
+    }
 
     .level-evaluation {
         background-color: @lightBlue;
@@ -628,6 +629,11 @@ table tr th {
 
  /* Large screens ----------- */
 @media screen and (max-width: 1824px) and (min-width: 1200px) {
+     /* Styles */
+
+    .top-page-inputs {
+        text-align: center;
+    }
 
     .level-evaluation {
         background-color: @lightBlue;
