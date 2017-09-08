@@ -38,7 +38,7 @@ interviewApp.EvaluationsPage = function(options = {} )  {
             <td class="table-data">${options.candidate}</td>
             <td class="table-data">${options.date}</td>
             <td class="table-data">${options.circle}</td>
-            <td style="text-align: right">Detalii<button class="add-button">+</button></td>
+            <td class="table-details" style="text-align: right">Detalii<button class="add-button">+</button></td>
         </tr>
         `
     }

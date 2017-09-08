@@ -484,7 +484,7 @@
     "areaContent": [
         {
             "textAreaHeader": "Should the candidate be hired?",
-            "textAreaPlaceHolder": "The type of project that is suitable for the candidate\n            Is guidance required for the candidate"
+            "textAreaPlaceHolder": "The type of project that is suitable for the candidate\nIs guidance required for the candidate"
         },
         {
             "textAreaHeader": "General Impression",
@@ -492,7 +492,7 @@
         },
         {
             "textAreaHeader": "Workflow, Leadership & Soft Skills",
-            "textAreaPlaceHolder": "Describe the environment in which the candidate works.\n            Describe any guidance or management experience"
+            "textAreaPlaceHolder": "Describe the environment in which the candidate works.\nDescribe any guidance or management experience"
         }
     ],
     "levelContent": {

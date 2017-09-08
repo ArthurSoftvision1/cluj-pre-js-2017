@@ -22,7 +22,7 @@ interviewApp.NAV = function (options={}) {
         <div class="row">
             <!--Navigation bar section-->
             <nav class="col-md-12 navigation-bar">
-                <div class="col-md-4">
+                <div class="header-navigation">
                     <!--Softvision logo-->
                     <a href="new-evaluation.html"><img id="logo-image-section" class="logo-image" src="src/views/img/logo-v2.png"/> </a>
                 </div>
