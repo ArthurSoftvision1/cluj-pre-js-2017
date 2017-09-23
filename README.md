@@ -1,2 +1,5 @@
-# cluj-pre-js-2017
-Cluj pre-employment Javascript training 2017
+# Review form application
+
+Single page application which gives to the user the possibility to log in and create a session storage.
+
+Also exists the possibility to add information in a local storage using a "Candidate input".
