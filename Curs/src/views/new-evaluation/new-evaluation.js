@@ -4,7 +4,7 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
         const result = options.map(function (element) {
             return `
             <div class="row">
-                <div class="container top_page_inputs">
+                <div class="container top-page-inputs">
                     <div class="col-md-3">${element}</div>
                 </div>
             </div>
@@ -15,7 +15,7 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
     }
         
     const TechnicalLevelHeader = function (options){
-        return `<div class="row_title">
+        return `<div class="row-title">
         <h2 class="description_section">${options}</h2>
         </div>`
     }
@@ -23,7 +23,7 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
     const  TechnicalLevelNav = function (options) {
         const result = options.map(function (element){
             return `
-            <div class="col-md-3 bullets_menu">
+            <div class="col-md-3 bullets-menu">
                 <h3 class="header-title">${element}</h3>
             </div>`
         })
@@ -47,7 +47,7 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
     const TechnicalLevelBoxSection = function (options = {} ) {
         const result = options.map(function(element) {
             return `
-            <div class="col-md-3 bullets_menu">
+            <div class="col-md-3 bullets-menu">
                 ${TechnicalLevelRadioSubsection(element)}
             </div>
             `
@@ -61,11 +61,11 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
             return `
                 ${TechnicalLevelHeader(options.technicalHeader)}
         
-            <div class="row level_evaluation">
+            <div class="row level-evaluation">
                 ${TechnicalLevelNav(options.technicalLevel)}
             </div>
         
-            <div class="row_section">
+            <div class="row-section">
                 ${TechnicalLevelBoxSection(options.technicalLevelSection)}
             </div>
             `;
@@ -74,9 +74,9 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
     const TextAreaBody = function (options) {
         const result = options.map(function(element) {
             return `
-            <div class="row_first">
+            <div class="row-first">
             <h2 class="description-section">${element.textAreaHeader}</h2>
-            <textarea cols="164" placeholder="${element.textAreaPlaceHolder}" ></textarea>
+            <textarea class="textarea-section" cols="164" placeholder="${element.textAreaPlaceHolder}" ></textarea>
         </div>`
         }).join('')
         return result
@@ -94,9 +94,9 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
     const legendBoxes = function (options = {}){
         const result = options.map(function(elements){
             return `
-            <li>
+            <li class="selector-content">
             <label>${elements.labelText}</label> 
-                <select name="${elements.selectName}">
+                <select class="select-option" name="${elements.selectName}">
                     <option selected disabled>Evaluation</option>
                     ${DropdownSelector(elements.legendSelectorContent)}
                 </select> 
@@ -108,7 +108,9 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
     const legendFinal = function(options = {}){
         return `<form class="language-form">
         <fieldset class="field-section">
-            <legend><h2>${options.legendHeader}</h2></legend>
+            <legend class="legend-title" >
+                <h2>${options.legendHeader}</h2>
+            </legend>
             <ul class="technical-list"> 
             ${legendBoxes(options.liContents)}
             </ul>
@@ -139,7 +141,7 @@ interviewApp.NewEvaluationPage = function(optionParam = {}) {
     }
    
     return `
-        ${interviewApp.NAV(optionParam.navigationLinks)},
+        ${interviewApp.NAV(optionParam.navLinks)},
         ${CandidateDetailsForm(optionParam.detailsForm)},
         ${TechnicalLevelPicker(optionParam.levelContent)},
         ${TextAreaBody(optionParam.areaContent)},

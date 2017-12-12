@@ -6,7 +6,6 @@ interviewApp.newEvaluationEvents = function () {
         event.preventDefault();
 
         interviewApp.evaluationsModule.init() // load evaluation page
-
     }
 
     // get evaluationButton by his ID
@@ -74,10 +73,4 @@ interviewApp.newEvaluationEvents = function () {
 
         // addEventListener on submit
         submitFormButton.addEventListener("click", submitButton)
-
-
-        
-        
-
-    
 }

@@ -17,7 +17,7 @@ interviewApp.LoginPage = function () {
         return `
         <div>
         <div class="banner-picture">
-            <a href="evaluation.html"><img src="../../src/views/img/feedback-banner.jpg"/> </a>
+            <a href="evaluation.html"><img class="header-background" src="../../src/views/img/feedback-banner.jpg"/> </a>
         </div>
         <div>
             <a href="evaluation.html"><img class="feedback-image" src="../../src/views/img/new feedback.jpg"/> </a>
@@ -41,7 +41,7 @@ interviewApp.LoginPage = function () {
 
     const SubmitFeedbackResults = function (options) {
         return `
-        <div class="text-description-2">
+        <div class="text-description-details">
         <!--Left text area-->
         <div class="left-text-description">
             <h3>View feedback results</h3>

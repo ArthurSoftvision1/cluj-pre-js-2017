@@ -18,6 +18,10 @@
     padding-bottom: 10px;
 }
 
+.top-page-inputs {
+    text-align: center;
+}
+
 .logout-button {
     float: right;
 }
@@ -42,19 +46,6 @@
 .navigation-bar {
     border-bottom: 2px solid @darkgrey;
     float: right;
-}
-
-.left_image {
-    height: 290px;
-}
-
-.right_image {
-    float: right;
-}
-
-.right_description {
-    font-weight: bold;
-    margin-top: 50px;
 }
 
 .container-fluid {
@@ -87,12 +78,6 @@ td {
     left: 0;
 }
 
-table tr th {
-    background-color: @lightBlue;
-    color: @white;
-    padding: 10px 0;
-}
-
 .logo-image {
     width: 15%;
     padding-right: 130px;
@@ -104,15 +89,11 @@ table tr th {
     color: @grey;
 }
 
-.container_table {
-    margin-top: 120px;
-}
-
 .new-evaluation {
     margin-left: 100px;
 }
 
-a.border-bottom:hover {
+.border-bottom:hover {
     border-bottom: 4px solid @blue;
     border-bottom-width: 7px;
 }
@@ -136,6 +117,7 @@ table {
 /* Large screens ----------- */
 @media screen and (min-width: 1824px) and (max-width: 1200px) {
     /* Styles */
+
     .add-button {
         background-color: @lightBlue;
         margin: 8px 0;
@@ -156,8 +138,9 @@ table {
 }
 
 /* Desktops and laptops ----------- */
-@media screen and (min-width: 1200px) and (max-width: 1024px) {
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
     /* Styles */
+
     .add-button {
         background-color: @lightBlue;
         margin: 8px 0;
@@ -169,17 +152,30 @@ table {
     }
 
     .logout-button {
-        float: none !important;
+        float: right;
     }
 
     .border-bottom {
-        font-size: 16px;
+        font-size: 23px;
+    }
+
+    .header-navigation {
+        margin-bottom: 6px;
+    }
+
+    .border-bottom {
+        font-size: 23px;
+    }
+
+    #logo-image-section {
+        width: 18%;
     }
 }
 
 /* Desktops and laptops ----------- */
-@media screen and (min-width: 1024px) and (max-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
     /* Styles */
+
     .add-button {
         background-color: @lightBlue;
         margin: 8px 0;
@@ -190,19 +186,36 @@ table {
         border: 1px solid @lightBlue;
     }
 
+    th,
+    td {
+        padding-left: 0;
+        font-size: 15px;
+    }
+
     .logout-button {
-        float: none !important;
+        float: right;
     }
 
     .border-bottom {
-        font-size: 14px;
+        font-size: 23px;
+    }
+
+    .header-navigation {
+        margin-bottom: 6px;
+    }
+
+    #logo-image-section {
+        width: 18%;
     }
 }
 
 /*Screen between 699px and 768px*/
-@media screen and (min-width: 768px) and (max-width: 699px) {
-    .logout-button {
-        float: none !important;
+@media screen and (max-width: 768px) and (min-width: 699px) {
+    /* Styles */
+
+    .table-data,
+    .table-details {
+        font-size: 15px;
     }
 
     .add-button {
@@ -213,62 +226,102 @@ table {
         font-size: 20px;
         border-radius: 100%;
         border: 1px solid @lightBlue;
-    }
-
-    .border-bottom {
-        font-size: 14px;
-    }
-
-    .navigation-bar .col-md-4 {
-        margin-bottom: 30px;
-    }
-}
-
-/*Screen between 529px and 699px*/
-@media screen and (min-width: 699px) and (max-width: 520px) {
-    .logout-button {
-        float: none !important;
-    }
-
-    .add-button {
-        background-color: @lightBlue;
-        margin: 8px 0;
-        color: @white;
-        height: 100%;
-        font-size: 20px;
-        border-radius: 100%;
-        border: 1px solid @lightBlue;
-    }
-
-    .border-bottom {
-        font-size: 14px;
-    }
-
-    .navigation-bar .col-md-4 {
-        margin-bottom: 30px;
-    }
-}
-
-/*Screen between 320px and 520px*/
-@media screen and (min-width: 520px) and (max-width: 320px) {
-    .logout-button {
-        float: none !important;
-    }
-
-    .border-bottom {
-        font-size: 14px;
-    }
-
-    .navigation-bar .col-md-4 {
-        margin-bottom: 30px;
     }
 
     td {
-        padding-left: 17px !important;
+        padding-left: 17px;
         font-size: 10px;
     }
 
     th {
         font-size: 10px;
+    }
+
+    .logout-button {
+        float: right;
+    }
+
+    .header-navigation {
+        margin-bottom: 6px;
+    }
+
+    .border-bottom {
+        font-size: 23px;
+    }
+
+    #logo-image-section {
+        width: 18%;
+    }
+}
+
+/*Screen between 529px and 699px*/
+@media screen and (max-width: 699px) and (min-width: 520px) {
+    /* Styles */
+
+    .table-data,
+    .table-details {
+        font-size: 15px;
+    }
+
+    .add-button {
+        background-color: @lightBlue;
+        margin: 8px 0;
+        color: @white;
+        height: 100%;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid @lightBlue;
+    }
+
+    .header-navigation {
+        margin-bottom: 30px;
+    }
+
+    .border-bottom {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding-left: 0;
+        font-size: 15px;
+    }
+
+    #logo-image-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }    
+}
+
+/*Screen between 320px and 520px*/
+@media screen and (min-width: 320px) and (max-width: 520px){
+    /* Styles */
+    
+    .table-data,
+    .table-details {
+        font-size: 15px;
+    }
+
+    .border-bottom {
+        font-size: 14px;
+    }
+
+    .header-navigation {
+        margin-bottom: 6px;
+    }
+
+    th,
+    td {
+        padding-left: 0;
+        font-size: 15px;
+    }
+
+    #logo-image-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #new-evaluation-page {
+        margin-left: 61px;
     }
 }

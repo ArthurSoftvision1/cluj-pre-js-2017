@@ -1,0 +1,525 @@
+{
+    "dropDown": [
+        {
+            "liContents": [
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "class",
+                    "labelText": "Classes"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "exception",
+                    "labelText": "Exception handling"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "version",
+                    "labelText": "Version Control"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "access",
+                    "labelText": "Access modifiers"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "pattern",
+                    "labelText": "Design patterns"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "access",
+                    "labelText": "Access modifiers"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "polymorphism",
+                    "labelText": "Polymorphism"
+                },
+             
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "regex",
+                    "labelText": "REGEX"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "track",
+                    "labelText": "Issue Tracking"
+                }
+            ],
+            "legendHeader": "OOP, Design Patterns"
+        },
+        {
+            "liContents": [
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "protocol",
+                    "labelText": "Protocol"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "headers",
+                    "labelText": "Headers"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "response",
+                    "labelText": "Response codes"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "request",
+                    "labelText": "Request methods"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "rest",
+                    "labelText": "REST"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "sessions",
+                    "labelText": "Sessions & Cookies"
+                }
+            ],
+            "legendHeader": "HTTP"
+        },
+        {
+            "liContents": [
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "doctype",
+                    "labelText": "Doctype"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "tags",
+                    "labelText": "Tags"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "attributes",
+                    "labelText": "Attributes"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "syntax",
+                    "labelText": "Syntax rules"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "syntax",
+                    "labelText": "Basic SEO"
+                }
+            ],
+            "legendHeader": "HTML"
+        },
+        {
+            "liContents": [
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "usage",
+                    "labelText": "Usage"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "styling",
+                    "labelText": "Styling"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "box",
+                    "labelText": "Box modelling"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "selectors",
+                    "labelText": "Selectors"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "css",
+                    "labelText": "CSS 3.0"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "dynamic",
+                    "labelText": "Dynamic Stylesheets"
+                }
+            ],
+            "legendHeader": "CSS"
+        },
+        {
+            "liContents": [
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "data",
+                    "labelText": "Data types & variables"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "functions",
+                    "labelText": "Functions"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "prototype",
+                    "labelText": "Prototype & OOP"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "debugg",
+                    "labelText": "Debugging"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "libraries",
+                    "labelText": "Libraries"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "object",
+                    "labelText": "Object manipulation"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "templating",
+                    "labelText": "Templating"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "testing",
+                    "labelText": "Testing(unit, E2E)"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "websockets",
+                    "labelText": "Websockets"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "promises",
+                    "labelText": "Promises"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "dommanipulation",
+                    "labelText": "DOM Manipulation"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "event",
+                    "labelText": "Event Handling"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "ajaxrequest",
+                    "labelText": "AJAX"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "tooling",
+                    "labelText": "Tooling"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "browser",
+                    "labelText": "Browser Engines"
+                }
+            ],
+            "legendHeader": "Javascript"
+        },
+        {
+            "liContents": [
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "backend",
+                    "labelText": "Backend frameworks"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "unittesting",
+                    "labelText": "Unit Testing"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "templatingoptions",
+                    "labelText": "Templating"
+                },
+                {
+                    "legendSelectorContent": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "selectName": "domhandle",
+                    "labelText": "DOM Manipulation"
+                }
+            ],
+            "legendHeader": "NodeJS"
+        }
+    ],
+    "areaContent": [
+        {
+            "textAreaHeader": "Should the candidate be hired?",
+            "textAreaPlaceHolder": "The type of project that is suitable for the candidate\nIs guidance required for the candidate"
+        },
+        {
+            "textAreaHeader": "General Impression",
+            "textAreaPlaceHolder": "*required"
+        },
+        {
+            "textAreaHeader": "Workflow, Leadership & Soft Skills",
+            "textAreaPlaceHolder": "Describe the environment in which the candidate works.\nDescribe any guidance or management experience"
+        }
+    ],
+    "levelContent": {
+        "technicalHeader": "Technical level",
+        "technicalLevel": [
+            "Trainee",
+            "Junior",
+            "Middle",
+            "Senior"
+        ],
+        "technicalLevelSection": [
+            "1",
+            "3",
+            "3",
+            "3"
+        ]
+    },
+    "navLinks": [
+        "Evaluations",
+        "New Evaluation",
+        "Logout"
+    ],
+    "detailsForm": [
+        "<input class=\"candidate_input\" type=\"text\" name=\"candidate\" placeholder=\"Candidate\"/>",
+        "<input class=\"interviewer_input\" type=\"text\" name=\"interviewer\" placeholder=\"Interviewer\"/>",
+        "<input class=\"calendar_input\" type=\"date\" name=\"date\" placeholder=\"4/22/2012\"/>",
+        "<a href=\"evaluation.html\"> <img class=\"calendar-date\" src=\"src/views/img/2019-200.png\"></a>"
+    ]
+}
